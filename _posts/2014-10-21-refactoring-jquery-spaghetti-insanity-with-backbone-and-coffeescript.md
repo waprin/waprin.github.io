@@ -52,7 +52,6 @@ We start with the following code:
                 $("#leagues_list").empty();
                 if (leagues_list.length == 0) {
                     $("#league_loading_gif").hide();
-                    $("#leagues_list").append($("<p>You have not imported any leagues.</p>"));
                 } else {
                     var allLoaded = true;
                     for (var i = 0; i < leagues_list.length; i++) {
