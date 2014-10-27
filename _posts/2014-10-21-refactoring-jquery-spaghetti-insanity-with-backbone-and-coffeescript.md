@@ -66,7 +66,7 @@ I am also going to rewrite the code in Coffeescript. Coffeescript is a Javascrip
 
 Probably not, even though it's always a best practice to use type-safe triple-equals comparisons in Javascript. I also forgot to include 'use strict'. With Coffeescript, I simply don't have to worry about these types of problems. I think the Coffeescript here will be pretty obvious, but if you're confused, you can use [this converter](http://js2coffee.org/).
 
-The most important things to know in order to read the examples below is that we use significant whitespace indentation instead of braces, we use "(x) ->"" instead of "function (x) { ", and "@"" is a shorthand for 'this.'. Finally, we generally omit parentheses around function calls, unless they are needed for clarity.
+The most important things to know in order to read the examples below is that we use significant whitespace indentation instead of braces, we use "(x) ->"" instead of "function (x) { ", and "@"" is a shorthand for 'this.'. We generally omit parentheses around function calls, unless they are needed for clarity. Finally, the last expression of a function is implicitly returned.
 
 One interesting thing to note about Backbone and Coffeescript is that they both have an extends() function that do the exact same thing, which is provide classical inheritance via protoype inheritance. I'll write about this in a future post, but in the  meantime you can read about some of those patterns from Javascript guru [Douglas Crockford](http://www.crockford.com/javascript/inheritance.html).
 
@@ -105,7 +105,7 @@ Here we've just defined our model and a collection of those models, and then ask
 
 And so on. If we want different URL structure, if we want to preprocess the results, or if we want to validate the results before updating the model, there are several Model/Collection methods to override that can provide that functionality. In this case we are retrieving trusted data in a conventional format and so we can stick with the defaults.
 
-What's great about dispatching to sync() is that it creates an abstraction of how your models to interact with their datastore (getting them, saving change) without tying it to a specific implementation. So if, for example, I have models and collections calling fetch() and save() all over the codebase, but I decide I want to first check a Browser Local Storage cache before I make an AJAX call, I can implement that logic by overriding a single function - and other Backbone developers will know that sync() override are the place to look for that kind of logic.
+What's great about dispatching to sync() is that it creates an abstraction of how your models to interact with their datastore (getting them, saving change) without tying it to a specific implementation. So if, for example, I have models and collections calling fetch() and save() all over the codebase, but I decide I want to first check a Browser Local Storage cache before I make an AJAX call, I can implement that logic by overriding a single function - and other Backbone developers will know that sync() overrides are the place to look for that kind of logic.
 
 The next part of the logic we will refactor is when to show the loading image. In our original code, this logic is spread all over. First we check if there are no elements, in which case we hide it, but then when there are elements, we maintain an allLoaded variable that we track while examining each League object to see if any of them aren't loaded, in which case we set it to false.
 
