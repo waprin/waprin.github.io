@@ -170,9 +170,9 @@ Ok, so the next thing we want to work on is rewriting the template rendering of 
 That is going to turn into this:
 
     class LeagueView extends Backbone.View
-        tagName: 'li'
+        tagName: 'li' # let Backbone create a new el us for us with this tag
         
-        template: _.template($("#league_template").html())
+        template: _.template($("#league_template").html()) 
         
         initialize: ->
             @listenTo @model 'change', @render
@@ -233,7 +233,7 @@ Here's our final code put together:
 
 
     class LeagueView extends Backbone.View
-        tagName: 'li'
+        tagName: 'li' # let Backbone create a new el us for us with this tag
         
         template: _.template($("#league_template").html())
         
