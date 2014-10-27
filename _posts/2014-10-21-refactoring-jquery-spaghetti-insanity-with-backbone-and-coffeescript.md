@@ -101,11 +101,13 @@ Here we've just defined our model and a collection of those models, and then ask
  Backbone methods like fetch() and save() which read from or write to a datastore delegate the datastore logic to a function called Backbone.sync(), which can be overriden globally or by-class. By default, though, it will assume your models are syncing with a REST backend via $.ajax(), with a URL structure that looks like
 
     Get the whole collection: GET    /{collection_url}
-    Get a model by id:        GET    /{collection_url}/id
-    Update a model by id:     POST   /{collection_url}/id
+    Get a model:              GET    /{collection_url}/{model_id}
+    Update a model:           POST   /{collection_url}/{model_id}
     ...
 
-And so on. If we want different URL structure, if we want to preprocess the results, or if we want to validate the results before updating the model, there are several Model/Collection methods to override that can provide that functionality. In this case we are retrieving trusted data in a conventional format and so we can stick with the defaults.
+And so on. When creating models in your datastore, it's strongly preferable to make sure they have a unique id field. You can name it 'id' or customize its name using 'idAttribute'. While Backbone will assign it's own id called the 'cid', it will give different one to each instance of a model, and without an id it has no way of knowing that two models returned are the same. 
+
+If we want different URL structure, if we want to preprocess the results, or if we want to validate the results before updating the model, there are several Model/Collection methods to override that can provide that functionality. In this case we are retrieving trusted data in a conventional format and so we can stick with the defaults.
 
 What's great about dispatching to sync() is that it creates an abstraction of how your models interact with their datastore without tying it to a specific implementation. The models and collections only retain the common functionality such as parsing, validating, and other data logic which is indepenent of your store. So if, for example, I have models and collections calling fetch() and save() all over the codebase, but I decide I want to first check a Browser Local Storage cache before I make an AJAX call, I can implement that logic by overriding a single function - and other Backbone developers will know that sync() overrides are the place to look for that kind of logic.
 
