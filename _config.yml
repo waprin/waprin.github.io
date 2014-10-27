@@ -9,13 +9,14 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Gotham Coder
-tagline: Savouring The Big Apple One Byte At A Time
+tagline: Savoring The Big Apple One Byte At A Time
 author :
   name : Bill Prin
   email : waprin@gmail.com
   github : waprin
-  twitter: username
-  feedburner: username
+  facebook: bill.prin.3
+  linkedin: waprin
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +26,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://gothamcoder.com
 
 paginate: 5
 
