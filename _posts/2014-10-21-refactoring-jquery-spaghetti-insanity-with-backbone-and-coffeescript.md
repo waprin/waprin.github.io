@@ -58,7 +58,7 @@ The following code is a mess, so just skim it for now, because I will break it d
 The conception of the code above.
 
 
-# Coffeescript
+## Coffeescript
 
 I am also going to rewrite the code in Coffeescript. Coffeescript is a Javascript preprocessor that simply cleans up the syntax of Javascript and helps you avoid common mistakes. Did you notice that I used a double-equal sign above?
 
@@ -70,7 +70,7 @@ The most important things to know in order to read the examples below is that we
 
 One interesting thing to note about Backbone and Coffeescript is that they both have an extends() function that do the exact same thing, which is provide classical inheritance via protoype inheritance. I'll write about this in a future post, but in the  meantime you can read about some of those patterns from Javascript guru [Douglas Crockford](http://www.crockford.com/javascript/inheritance.html).
 
-# Refactoring
+## Refactoring
 
 The first thing our Javascript does is request the collection from the server. 
 
