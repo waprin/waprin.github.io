@@ -147,7 +147,7 @@ You can see that the logic is spread out across the entire function and intertwi
                     @$el.show()
     loadingView = new LoadingView {collection: leagues}
 
-This ends up reading closer to what an English description would look like - whenever we sync the leagues with the datastore, if the collection or empty or every league is loaded, hide the loading bar. Otherwise show it. Each Backbone View is associated with a DOM element represented by its 'el' field, which we can either use jQuery to grab an existing one like we did here, or have Backbone create a new one for us. After that, on the initalization of our View we listen to our collection's sync event. 
+This ends up reading closer to what an English description would look like - whenever we sync the leagues with the datastore, if the collection is empty or every league is loaded, hide the loading bar. Otherwise show it. Each Backbone View is associated with a DOM element represented by its 'el' field, which we can either use jQuery to grab an existing one like we did here, or have Backbone create a new one for us. After that, on the initalization of our View we listen to our collection's sync event. 
 
 We have to use Coffeescript's 'fat' arrow syntax so the 'this' pointer is bound to the View object, and not the Collection object that triggers the event. In plain Javascript we would do something like:
 
