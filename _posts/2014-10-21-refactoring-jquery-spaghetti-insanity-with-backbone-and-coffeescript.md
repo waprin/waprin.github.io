@@ -172,7 +172,7 @@ That is going to turn into this:
     class LeagueView extends Backbone.View
         tagName: 'li'
         
-        template: _.template("#league_template")
+        template: _.template($("#league_template").html())
         
         initialize: ->
             @listenTo @model 'change', @render
