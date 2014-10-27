@@ -194,7 +194,7 @@ That is going to turn into this:
 
 While it's true the new code is a little longer, we're now expressing ourselves a lot more declaratively rather than procedurally, which makes things easier to wrap your ahead around as the application grows in complexity. The code is also a lot better isolated (no ellipses here) and again, will be easier to test.
 
-We listen to an 'add' event rather than a 'sync' event since we are only going to something different when we are returned new Leagues - which is to add its new 'li' element to our list. 
+We listen to an 'add' event rather than a 'sync' event since we are only going to something different when the collection is returned to us with a League object with an 'id' field we haven't seen before. When we get one, we create a new View (which includes a new DOM element) and append it to our list element.
 
 Wait, what happens if a League object changes though? Our collection isn't listening to those events. Well, as long as the 'id' of the model stays consistent, the Backbone sync method will automatically update our backend representations when we call fetch(). That's why we simply have our LeagueView listening to changes on its own model in order to know whether it needs to re-render itself. Note that we are listening to 'change' events rather than 'sync' events since we only want to re-render on a sync that changes a model's attribute. We could even specify which fields we care about changing by listening specifically to a 'change:field' event, but in this case we care about all of them.
 
