@@ -257,8 +257,8 @@ Here's our final code put together:
     $ ->
         leagues = new Leagues()
         leagues.on 'sync', ->
-        if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
-            setTimeout leagues.fetch, 5000
+            if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
+                setTimeout leagues.fetch, 5000
         leagues.fetch()
 
 While I admit that if you're not used to Backbone and Coffeescript, the above code may be a lot less familiar than the jQuery at the beginning, once I got used to it, I find this style much easier to work with. Also, since Backbone is a very popular library, other developers are more likely to be able to jump onto your project and understand what you are trying to accomplish.
