@@ -66,7 +66,7 @@ I am also going to rewrite the code in Coffeescript. Coffeescript is a Javascrip
 
 Probably not, even though it's always a best practice to use type-safe triple-equals comparisons in Javascript. I also forgot to include 'use strict'. With Coffeescript, I simply don't have to worry about these types of problems. I think the Coffeescript here will be pretty obvious, but if you're confused, you can use [this converter](http://js2coffee.org/).
 
-The most important things to know in order to read the examples below is that we use significant whitespace indentation instead of braces, we use "(x) ->"" instead of "function (x) { ", and "@"" is a shorthand for 'this.'. We generally omit parentheses around function calls, unless they are needed for clarity. Finally, the last expression of a function is implicitly returned.
+The most important things to know in order to read the examples below is that we use significant whitespace indentation instead of braces, we use "(x) ->"" instead of "function (x) { ", and "@"" is a shorthand for 'this.'. We generally omit parentheses around function calls, unless they are needed for clarity. The last expression of a function is implicitly returned. Finally, I will include a few comments, which will be any thing afer a # sign on a line.
 
 One interesting thing to note about Backbone and Coffeescript is that they both have an extends() function that do the exact same thing, which is provide classical inheritance via protoype inheritance. I'll write about this in a future post, but in the  meantime you can read about some of those patterns from Javascript guru [Douglas Crockford](http://www.crockford.com/javascript/inheritance.html).
 
