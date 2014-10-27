@@ -23,7 +23,7 @@ As an aside, both [Backbone](http://backbonejs.org/docs/backbone.html) and [Unde
 
 The following code is a mess, so just skim it for now, because I will break it down into parts when I rewrite it. The goal of the code is to follow the loading progress of a collection of 'League' objects, represented as a JSON list of JSON objects, served up via an AJAX endpoint. We want to render the leagues that are finished loading by passing the objects to a template (using Underscore's _.template() function) and appending the resulting HTML to an existing list element on our page. If any leagues are not finished loading, we show a loading bar, and set a timeout to poll the endpoint again in 5 seconds. 
 
-Assuming our endpoint returns something like this:
+Assuming our endpoint 'leagues/' returns something like this:
 
     [
       {"name": "my league", "year": "2014", "loaded": true},
