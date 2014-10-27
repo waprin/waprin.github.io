@@ -254,8 +254,19 @@ Here's our final code put together:
             leagueView = new LeagueView {model: league} # creates a new 'li' element
             @$el.append(leagueView.render().el)         # and adds it to our list
 
+    class LoadingView extends Backbone.View
+        el: $("#league_loading_gif") # this element should already exist in the HTML
+
+        initialize: -> 
+            @collection.on 'sync', => # Note the 'fat' arrow, see below
+                if _.isEmpty @collections.models or _.every @collection.models, isLoaded
+                    @$el.hide()     # $@el is shorthand for 'this.$(el)'
+                else
+                    @$el.show()
+
     $ ->
         leagues = new Leagues()
+        loadingView = new LoadingView({collection: leagues})
         listView = new LeaguesListView({collection: leagues})
         leagues.on 'sync', ->
             if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
