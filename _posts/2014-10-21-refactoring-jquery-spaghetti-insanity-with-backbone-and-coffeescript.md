@@ -96,7 +96,7 @@ Our rewrite of this part of the code looks like this:
         leagues.fetch()
 
 
-Here we've just defined our model and a collection of those models, and then asked to fetch it from the server. Backbone methods that get models from a datastore, like fetch(), or update the datastore with changes, like save(), dispatch to a function called Backbone.sync(), which can be overriden globally or by-class. By default, though, it will assume your models are syncing with a REST backend via $.ajax(), with a URL structure that looks like
+Here we've just defined our model and a collection of those models, and then asked to fetch it from the server. Backbone methods which get models that read from or write to a datastore delegate the work to a function called Backbone.sync(), which can be overriden globally or by-class. By default, though, it will assume your models are syncing with a REST backend via $.ajax(), with a URL structure that looks like
 
     Get the whole collection: GET    /{collection_url}
     Get a model by id:        GET    /{collection_url}/id
