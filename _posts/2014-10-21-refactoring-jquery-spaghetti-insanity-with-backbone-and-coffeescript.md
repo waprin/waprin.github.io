@@ -256,6 +256,7 @@ Here's our final code put together:
 
     $ ->
         leagues = new Leagues()
+        listView = new LeaguesListView({collection: leagues})
         leagues.on 'sync', ->
             if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
                 setTimeout leagues.fetch, 5000
