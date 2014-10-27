@@ -21,25 +21,47 @@ The primary purpose of BackboneJS, a relatively small library, is not to add fun
 
 As an aside, both [Backbone](http://backbonejs.org/docs/backbone.html) and [Underscore](http://underscorejs.org/docs/underscore.html) have their source code annotated with line-by-line explanations, which are great resources if you want to improve your Javascript or figure out *exactly* what that function does.
 
-The following code is a mess, so just skim it for now, because I will break it down into parts when I rewrite it. The goal of the code is to follow the loading progress of a collection of 'League' objects, represented as a JSON list of JSON objects, served up via an AJAX endpoint. We want to render the leagues that are finished loading by passing the objects to a template (using Underscore's _.template() function) and appending the resulting HTML to an existing list element on our page. If any leagues are not finished loading, we show a loading bar, and set a timeout to poll the endpoint again in 5 seconds. The League objects themselves have a bunch of fields the template will use, but the only field relevant to page logic is the 'loaded' field.
+The following code is a mess, so just skim it for now, because I will break it down into parts when I rewrite it. The goal of the code is to follow the loading progress of a collection of 'League' objects, represented as a JSON list of JSON objects, served up via an AJAX endpoint. We want to render the leagues that are finished loading by passing the objects to a template (using Underscore's _.template() function) and appending the resulting HTML to an existing list element on our page. If any leagues are not finished loading, we show a loading bar, and set a timeout to poll the endpoint again in 5 seconds. 
 
+Assuming our endpoint returns something like this:
+
+    [
+      {"name": "my league", "year": "2014", "loaded": true},
+      {"name": "my other league", "year": "2014", "loaded": false}
+    ]
+
+And the HTML on our page looks something like this:
+    
+    <html>
+    <body>
+    <img id="league_loading_gif" src="an_image_url.jpg" style="display:none;"/>
+    <ul id="leagues_list"></ul>
+
+    <script type='text/template' id='league_template'>
+       <h1><%= name %> </h1>
+       <h2><%= year %> </h2>
+    </script>
+
+We start with the following code:
+
+    <script type='text/javascript'>
     $(document).ready(function () {
         league_template = _.template($("#league_template").html());
         var getLeagues = function() {
-            $.ajax("leagues/").done(function (data) {
-                $("#accounts_list").empty();
-                if (data.length == 0) {
+            $.ajax("leagues/").done(function (leagues_list) {
+                $("#leagues_list").empty();
+                if (leagues_list.length == 0) {
                     $("#league_loading_gif").hide();
-                    $("#accounts_list").append($("<p>You have not imported any leagues.</p>"));
+                    $("#leagues_list").append($("<p>You have not imported any leagues.</p>"));
                 } else {
                     var allLoaded = true;
-                    for (var i = 0; i < data.length; i++) {
-                        var league = data.accounts[i]
+                    for (var i = 0; i < leagues_list.length; i++) {
+                        var league = leagues_list[i]
                         if (!league[i].loaded) {
                             allLoaded = False;
                         }
                         league_html = league_template(leagues[i]);
-                        $("#accounts_list").append(league_html);
+                        $("#leagues_list").append(league_html);
                     }
                     if (allLoaded) {
                         $("#league_loading_gif").hide();
@@ -52,6 +74,7 @@ The following code is a mess, so just skim it for now, because I will break it d
         };
         getLeagues();
     });
+    </script>
 
 <img height="300" width="400" src="{{ site.url }}/assets/noodly.jpg" />
 
@@ -62,7 +85,7 @@ The conception of the code above.
 
 I am also going to rewrite the code in Coffeescript. Coffeescript is a Javascript preprocessor that simply cleans up the syntax of Javascript and helps you avoid common mistakes. Did you notice that I used a double-equal sign above?
 
-    if (data.length == 0) {
+    if (leagues_list.length == 0) {
 
 Probably not, even though it's always a best practice to use type-safe triple-equals comparisons in Javascript. I also forgot to include 'use strict'. With Coffeescript, I simply don't have to worry about these types of problems. I think the Coffeescript here will be pretty obvious, but if you're confused, you can use [this converter](http://js2coffee.org/).
 
@@ -75,7 +98,7 @@ One interesting thing to note about Backbone and Coffeescript is that they both 
 The first thing our Javascript does is request the collection from the server. 
 
      var getLeagues = function() {
-        $.ajax("leagues/").done(function (data) {
+        $.ajax("leagues/").done(function (leagues_list) {
             ...
         }
       };
@@ -113,12 +136,13 @@ What's great about dispatching to sync() is that it creates an abstraction of ho
 
 The next part of the logic we will refactor is when to show the loading image. In our original code, this logic is spread all over. First we check if there are no elements, in which case we hide it, but then when there are elements, we maintain an allLoaded variable that we track while examining each League object to see if any of them aren't loaded, in which case we set it to false.
 
-    if (data.length == 0) {
+    if (leagues_list.length == 0) {
         $("#league_loading_gif").hide();
         ...
     } else {
         var allLoaded = true;
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < leagues_list.length; i++) {
+            league = leagues_list[i];
             if (!league[i].loaded) {
                 allLoaded = False;
             }
@@ -162,13 +186,13 @@ which is exactly the type of awkward kludge I use Coffeescript to avoid.
 
 Ok, so the next thing we want to work on is rewriting the template rendering of the League objects.
 
-    $("#accounts_list").empty();
+    $("#leagues_list").empty();
     ...
-    for (var i = 0; i < data.length; i++) {
-        var league = data.accounts[i]
+    for (var i = 0; i < leagues_listlength; i++) {
+        var league = leagues_list[i]
         ...
         league_html = league_template(leagues[i]);
-        $("#accounts_list").append(league_html);
+        $("#leagues_list").append(league_html);
     }
 
 That is going to turn into this:
@@ -186,7 +210,7 @@ That is going to turn into this:
             @                 # Convention is to always return 'this' at the end of render()
 
     class LeaguesListView extends Backbone.View
-        el: $("accounts_list") # This should be a 'ul' element that already exists in the HTML
+        el: $("leagues_list") # This should be a 'ul' element that already exists in the HTML
 
         initialize: ->
             @listenTo @collection, 'add', @addOne # listenTo() will ensure 'this' is bound to this View
@@ -249,7 +273,7 @@ Here's our final code put together:
             @                 # Convention is to always return 'this' at the end of render()
 
     class LeaguesListView extends Backbone.View
-        el: $("accounts_list") # This should be a 'ul' element that already exists in the HTML
+        el: $("#leagues_list") # This should be a 'ul' element that already exists in the HTML
 
         initialize: ->
             @listenTo @collection, 'add', @addOne # listenTo() will ensure 'this' is bound to this View
