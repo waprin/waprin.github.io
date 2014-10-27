@@ -235,7 +235,7 @@ Here's our final code put together:
     class LeagueView extends Backbone.View
         tagName: 'li'
         
-        template: _.template("#league_template")
+        template: _.template($("#league_template").html())
         
         initialize: ->
             @listenTo @model 'change', @render
