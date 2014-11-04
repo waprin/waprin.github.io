@@ -26,14 +26,16 @@ As an aside, both [Backbone](http://backbonejs.org/docs/backbone.html) and [Unde
 The following code is a mess, so just skim it for now, because I will break it down into parts when I rewrite it. The goal of the code is to follow the loading progress of a collection of 'League' objects, represented as a JSON list of objects, served up via an AJAX endpoint. We want to render the leagues that are finished loading by passing the objects to a template (using Underscore's _.template() function) and appending the resulting HTML to an existing list element on our page. If any leagues are not finished loading, we show a loading bar, and set a timeout to poll the endpoint again in 5 seconds. 
 
 Assuming our endpoint 'leagues/' returns something like this:
-
+{% highlight json %}
     [
       {"name": "my league", "year": "2014", "loaded": true}, 
       {"name": "my other league", "year": "2014", "loaded": false}
-    ]
+]
+{% endhighlight %}
 
-And the HTML on our page looks something like this:
+And the HTML on our page starts something like this:
   
+{% highlight html %}    
     <html>
     <body>
     <img id="league_loading_gif" src="an_image_url.jpg" style="display:none;"/>
@@ -43,10 +45,12 @@ And the HTML on our page looks something like this:
        <h1><%= name %> </h1>
        <h2><%= year %> </h2>
     </script>
+...
+{% endhighlight %}
 
 We start with the following code:
-
-      <script type='text/javascript'>
+{% highlight javascript %}
+    <script type='text/javascript'>
       $(document).ready(function () {
         league_template = _.template($("#league_template").html());
         var getLeagues = function() {
@@ -75,7 +79,8 @@ We start with the following code:
         };
         getLeagues();
       });
-      </script>
+    </script>
+{% endhighlight %}
 
 <table class="image">
   <caption align="bottom">The conception of the code above.</caption>
@@ -89,7 +94,10 @@ We start with the following code:
 
 I am also going to rewrite the code in Coffeescript. Coffeescript is a Javascript preprocessor that simply cleans up the syntax of Javascript and helps you avoid common mistakes. Did you notice that I used a double-equal sign above?
 
+{% highlight javascript %}
     if (leagues_list.length == 0) {
+{% endhighlight %}
+
 
 Probably not, even though it's always a best practice to use type-safe triple-equals comparisons in Javascript. I also forgot to include 'use strict'. With Coffeescript, I simply don't have to worry about these types of problems. I think the Coffeescript here will be pretty obvious, but if you're confused, you can use [this converter](http://js2coffee.org/).
 
@@ -100,17 +108,20 @@ One interesting thing to note about Backbone and Coffeescript is that they both 
 ## Refactoring
 
 The first thing our Javascript does is request the collection from the server. 
-
+{% highlight javascript %}
      var getLeagues = function() {
        $.ajax("leagues/").done(function (leagues_list) {
           ...
         }
      };
      getLeagues();
+{% endhighlight %}    
 
 You can note that I use the .done() method on the [Deferred](http://api.jquery.com/category/deferred-object/) object that ajax() return rather than pass a callback, since Deferred/Promises usually leads to more readable code than callbacks.
 
 Our rewrite of this part of the code looks like this:
+
+{% highlight coffeescript %}
 
     class League extends Backbone.Model
  
@@ -121,6 +132,7 @@ Our rewrite of this part of the code looks like this:
     $ -> # short hand for $(document).ready()
       leagues = new Leagues()
       leagues.fetch()
+{% endhighlight %}      
 
 
 Here we've just defined our model and a collection of those models, and then asked to fetch it from the server. The collection will automatically create a new instance of the League model for each object it finds in the JSON list returned, and store the fields of that JSON in the model's attributes. Those attributes should be accessed using get() and set() so that the proper events and validation are called. If you want to get the model's raw JSON back, you can always use toJSON().
@@ -140,6 +152,7 @@ What's great about dispatching to sync() is that it creates an abstraction of ho
 
 The next part of the logic we will refactor is when to show the loading image. In our original code, this logic is spread all over. First we check if there are no elements, in which case we hide it, but then when there are elements, we maintain an allLoaded variable that we track while examining each League object to see if any of them aren't loaded, in which case we set it to false.
 
+{% highlight javascript %}
     if (leagues_list.length == 0) {
       $("#league_loading_gif").hide();
       ...
@@ -159,8 +172,11 @@ The next part of the logic we will refactor is when to show the loading image. I
         setTimeout(getLeagues, 5000);
       }
     }
+{% endhighlight %}    
 
 You can see that the logic is spread out across the entire function and intertwined with unrelated logic. This makes it almost impossible to unit test. The Backbone code is going to be much more declarative and only concern itself with whether to show the loading bar or not, and not mixin our calls to setTimeout or templating.
+
+{% highlight coffeescript %}
 
     #  define a helper function used below
     isLoaded = (model) ->   
@@ -180,19 +196,26 @@ You can see that the logic is spread out across the entire function and intertwi
             @$el.show()
     loadingView = new LoadingView {collection: leagues}
 
+{% endhighlight %}
+
 This ends up reading closer to what an English description would look like - whenever we sync the leagues with the datastore, if the collection is empty or every league is loaded, hide the loading bar. Otherwise show it. Each Backbone View is associated with a DOM element represented by its 'el' field, which we can either use jQuery to grab an existing one like we did here, or have Backbone create a new one for us. After that, on the initalization of our View we listen to our collection's sync event. 
 
 We have to use Coffeescript's 'fat' arrow syntax so the 'this' pointer is bound to the View object, and not the Collection object that triggers the event. In plain Javascript we would do something like:
+
+{% highlight javascript %}
 
     var that = this;
     this.collection.on('sync', function(){
       if(_.isEmpty(that.collections.models) || _.every(that.collections.models)) {
         ....
 
+{% endhighlight %}        
+
 which is exactly the type of awkward kludge I use Coffeescript to avoid.
 
-Ok, so the next thing we want to work on is rewriting the template rendering of the League objects.
+The next thing we want to work on is rewriting the template rendering of the League objects.
 
+{% highlight javascript %}
     $("#leagues_list").empty();
     ...
     for (var i = 0; i < leagues_listlength; i++) {
@@ -201,9 +224,11 @@ Ok, so the next thing we want to work on is rewriting the template rendering of 
       league_html = league_template(leagues[i]);
       $("#leagues_list").append(league_html);
     }
+{% endhighlight %}
 
 That is going to turn into this:
 
+{% highlight coffeescript %}
     class LeagueView extends Backbone.View
       tagName: 'li' # let Backbone create a new el us for us with this tag
       template: _.template($("#league_template").html()) 
@@ -224,39 +249,47 @@ That is going to turn into this:
       addOne: (league) ->
         leagueView = new LeagueView {model: league} # creates a new 'li' element
         @$el.append(leagueView.render().el)     # and adds it to our list
-
+{% endhighlight %}
 
 While it's true the new code is a little longer, we're now expressing ourselves a lot more declaratively rather than procedurally, which makes things easier to wrap your ahead around as the application grows in complexity. The code is also a lot better isolated (no ellipses here) and again, will be easier to test.
 
 We listen to an 'add' event rather than a 'sync' event since we are only going to something different when the collection is returned to us with a League object with an 'id' field we haven't seen before. When we get one, we create a new View (which includes a new DOM element) and append it to our list element.
 
-Wait, what happens if a League object changes though? Our LeaguesListView isn't listening to those events, but you might notice that the LeagueView itself is. as long as the 'id' of the model stays consistent, the Backbone sync('read') call that fetch makes also sync each of the models with its backend representation. That's why we simply have our LeagueView listening to changes on its own model in order to know whether it needs to re-render itself. Note that we are listening to 'change' events rather than 'sync' events since we only want to re-render on a sync that changes a model's attribute. We could even specify which fields we care about changing by listening specifically to a 'change:field' event, but in this case we care about all of them.
+Wait, what happens if a League object changes though? Our LeaguesListView isn't listening to those events, but you might notice that the LeagueView itself is. as long as the 'id' of the model stays consistent, the Backbone sync('read') call that fetch() makes also update each of the local models with any models the server returns with the same id. That's why we simply have our LeagueView listening to changes on its own model in order to know whether it needs to re-render itself. Note that we are listening to 'change' events rather than 'sync' events since we only want to re-render on a sync that changes a model's attribute. We could even specify which fields we care about changing by listening specifically to a 'change:field' event, but in this case we care about all of them.
 
 Finally, we need to poll the server if all of the leagues are not finished loading. 
 
+{% highlight javascript %}
     if (allLoaded) {
       ...
     } else {
       ...
       setTimeout(getLeagues, 5000);
     }
+{% endhighlight %}
 
 Before, this was mixed up with whether we were displaying the loading bar. Now it's on its own.
 
+{% highlight coffeescript %}
     leagues.on 'sync', ->
       if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
         setTimeout leagues.fetch, 5000
+{% endhighlight %}
 
-This won't *quite* work without one small change. The problem is, not surprisingly, related to the 'this' pointer. Specifically, fetch is an instance method, so we want to make sure the 'this' pointer is pointing ot the instance itself, but we are just grabbing the function from the object without binding it to anything. We can ensure that the function will come with it's 'this' pointer properly bound to it by adding an initialize method to the Leagues collection with this line:
+We are trying to hand the models fetch method to setTimeout to call in 5 seconds. This won't *quite* work without one small change. The problem is, not surprisingly, related to the 'this' pointer. Specifically, fetch() is an instance method, so we want to make sure the 'this' pointer is pointing to the instance itself, but we are just grabbing the function from the object without binding it to anything. We can ensure that the function will come with it's 'this' pointer properly bound to the instance by adding an initialize method to the Leagues collection with the useful utility from Underscore, bindAll():
+
+{% highlight coffeescript %}
 
     class Leagues
       initialize: ->
         _.bindAll @, 'fetch'
+{% endhighlight %}        
 
-This makes sure that whenever you grab the 'fetch' method from an instance of Leagues, it will come with a 'this' pointer attached.
+_.bindall() a list of parameters, the first is an instance of a class ad the rest are method names for the class, and makes sure that whenever you grab the a method from an instance, when it's called, the 'this' pointer will be pointing to the instance and not whatever ends up calling the function. 
 
 Here's our final code put together:
 
+{% highlight coffeescript %}
     class League extends Backbone.Model
 
     class Leagues extends Backbone.Collection
@@ -310,6 +343,8 @@ Here's our final code put together:
         if not (_.isEmpty leagues.models or _.every leagues.models, isLoaded)
           setTimeout leagues.fetch, 5000
       leagues.fetch()
+
+{% endhighlight %}      
 
 While I admit that if you're not used to Backbone and Coffeescript, the above code may be a lot less familiar than the jQuery at the beginning, once I got used to it, I find this style much easier to work with. Also, since Backbone is a very popular library, other developers are more likely to be able to jump onto your project and understand what you are trying to accomplish.
 
