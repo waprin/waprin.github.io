@@ -107,6 +107,8 @@ One interesting thing to note about Backbone and Coffeescript is that they both 
 
 ## Refactoring
 
+### Loading The League
+
 The first thing our Javascript does is request the collection from the server. 
 {% highlight javascript %}
      var getLeagues = function() {
@@ -134,8 +136,9 @@ Our rewrite of this part of the code looks like this:
       leagues.fetch()
 {% endhighlight %}      
 
-
 Here we've just defined our model and a collection of those models, and then asked to fetch it from the server. The collection will automatically create a new instance of the League model for each object it finds in the JSON list returned, and store the fields of that JSON in the model's attributes. Those attributes should be accessed using get() and set() so that the proper events and validation are called. If you want to get the model's raw JSON back, you can always use toJSON().
+
+### Backbone.sync() - What and Why
 
  Backbone methods like fetch() and save() which read from or write to a datastore delegate the datastore logic to a function called Backbone.sync(), which can be overriden globally or by-class. By default, though, it will assume your models are syncing with a REST backend via $.ajax(), with a URL structure that looks like
 
@@ -149,6 +152,8 @@ And so on. When creating models in your datastore, it's strongly preferable to m
 If we want different URL structure, if we want to preprocess the results, or if we want to validate the results before updating the model, there are several Model/Collection methods to override that can provide that functionality. In this case we are retrieving trusted data in a conventional format and so we can stick with the defaults.
 
 What's great about dispatching to sync() is that it creates an abstraction of how your models interact with their datastore without tying it to a specific implementation. The models and collections only retain the common functionality such as parsing, validating, and other data logic which is independent of your store. So if, for example, I have models and collections calling fetch() and save() all over the codebase, but I decide I want to first check a Browser Local Storage cache before I make an AJAX call, I can implement that logic by overriding a single function - and other Backbone developers will know that sync() overrides are the place to look for that kind of logic.
+
+###
 
 The next part of the logic we will refactor is when to show the loading image. In our original code, this logic is spread all over. First we check if there are no elements, in which case we hide it, but then when there are elements, we maintain an allLoaded variable that we track while examining each League object to see if any of them aren't loaded, in which case we set it to false.
 
