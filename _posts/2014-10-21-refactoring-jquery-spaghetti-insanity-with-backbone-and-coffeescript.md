@@ -107,7 +107,7 @@ One interesting thing to note about Backbone and Coffeescript is that they both 
 
 ## Refactoring
 
-### Loading The League
+### Loading The League Model From The Server
 
 The first thing our Javascript does is request the collection from the server. 
 {% highlight javascript %}
@@ -153,7 +153,9 @@ If we want different URL structure, if we want to preprocess the results, or if 
 
 What's great about dispatching to sync() is that it creates an abstraction of how your models interact with their datastore without tying it to a specific implementation. The models and collections only retain the common functionality such as parsing, validating, and other data logic which is independent of your store. So if, for example, I have models and collections calling fetch() and save() all over the codebase, but I decide I want to first check a Browser Local Storage cache before I make an AJAX call, I can implement that logic by overriding a single function - and other Backbone developers will know that sync() overrides are the place to look for that kind of logic.
 
-###
+### Using The League Model To Render Two Dynamic Views
+
+#### The Loading Bar View
 
 The next part of the logic we will refactor is when to show the loading image. In our original code, this logic is spread all over. First we check if there are no elements, in which case we hide it, but then when there are elements, we maintain an allLoaded variable that we track while examining each League object to see if any of them aren't loaded, in which case we set it to false.
 
@@ -218,6 +220,8 @@ We have to use Coffeescript's 'fat' arrow syntax so the 'this' pointer is bound 
 
 which is exactly the type of awkward kludge I use Coffeescript to avoid.
 
+
+#### The League Information View
 The next thing we want to work on is rewriting the template rendering of the League objects.
 
 {% highlight javascript %}
@@ -234,31 +238,34 @@ The next thing we want to work on is rewriting the template rendering of the Lea
 That is going to turn into this:
 
 {% highlight coffeescript %}
-    class LeagueView extends Backbone.View
-      tagName: 'li' # let Backbone create a new el us for us with this tag
-      template: _.template($("#league_template").html()) 
-      initialize: ->
-        @listenTo @model 'change', @render
-      render: ->
-        @$el.html(@template(model))
-        # Convention is to always return 'this' at the end of render()
-        @        
 
-    class LeaguesListView extends Backbone.View
-      # This should be a 'ul' element that already exists in the HTML
-      el: $("leagues_list") 
+class LeagueView extends Backbone.View
+    tagName: 'li' # let Backbone create a new el us for us with this tag
+    template: _.template($("#league_template").html()) 
+    initialize: ->
+      @listenTo @model 'change', @render
+    render: ->
+      @$el.html(@template(model))
+      # Convention is to always return 'this' at the end of render()
+      @        
 
-      initialize: ->
-        @listenTo @collection, 'add', @addOne # listenTo() will ensure 'this' is bound to this View
+class LeaguesListView extends Backbone.View
+    # This should be a 'ul' element that already exists in the HTML
+    el: $("leagues_list") 
 
-      addOne: (league) ->
-        leagueView = new LeagueView {model: league} # creates a new 'li' element
-        @$el.append(leagueView.render().el)     # and adds it to our list
+    initialize: ->
+      @listenTo @collection, 'add', @addOne # listenTo() will ensure 'this' is bound to this View
+
+    addOne: (league) ->
+      leagueView = new LeagueView {model: league} # creates a new 'li' element
+      @$el.append(leagueView.render().el)     # and adds it to our list
 {% endhighlight %}
 
 While it's true the new code is a little longer, we're now expressing ourselves a lot more declaratively rather than procedurally, which makes things easier to wrap your ahead around as the application grows in complexity. The code is also a lot better isolated (no ellipses here) and again, will be easier to test.
 
 We listen to an 'add' event rather than a 'sync' event since we are only going to something different when the collection is returned to us with a League object with an 'id' field we haven't seen before. When we get one, we create a new View (which includes a new DOM element) and append it to our list element.
+
+### Updating The League Data View On Data Changes
 
 Wait, what happens if a League object changes though? Our LeaguesListView isn't listening to those events, but you might notice that the LeagueView itself is. as long as the 'id' of the model stays consistent, the Backbone sync('read') call that fetch() makes also update each of the local models with any models the server returns with the same id. That's why we simply have our LeagueView listening to changes on its own model in order to know whether it needs to re-render itself. Note that we are listening to 'change' events rather than 'sync' events since we only want to re-render on a sync that changes a model's attribute. We could even specify which fields we care about changing by listening specifically to a 'change:field' event, but in this case we care about all of them.
 
@@ -291,6 +298,8 @@ We are trying to hand the models fetch method to setTimeout to call in 5 seconds
 {% endhighlight %}        
 
 _.bindall() a list of parameters, the first is an instance of a class ad the rest are method names for the class, and makes sure that whenever you grab the a method from an instance, when it's called, the 'this' pointer will be pointing to the instance and not whatever ends up calling the function. 
+
+### Final Code
 
 Here's our final code put together:
 
