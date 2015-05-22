@@ -9,12 +9,12 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Gotham Coder
-tagline: Taking A Byte Out Of The Big Apple
+tagline: (formerly) Taking A Byte Out Of The Big Apple
 author :
   name : Bill Prin
   email : 
   github : waprin
-  facebook: bill.prin.3
+  twitter: meta_wish
   linkedin: waprin
   stackoverflow: 226773
 
