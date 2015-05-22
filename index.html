@@ -11,7 +11,8 @@ tagline: Savoring The Big Apple One Byte At A Time
     <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
   </p>
   <div class="content">
-    {{ post.content }}
+    {{ post.excerpt }}
+    <a href="{{ post.url }}">Continue Reading...</a>
   </div>
 {% endfor %}
 

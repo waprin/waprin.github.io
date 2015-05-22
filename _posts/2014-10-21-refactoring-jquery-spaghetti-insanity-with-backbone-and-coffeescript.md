@@ -13,6 +13,7 @@ tags: [jQuery, backbone, coffeescript]
 
 I'm a fan of what I call the Hemingway approach to development - code drunk, refactor sober. While I don't literally mean [that you need to be intoxicated to write software](http://widgetsandshit.com/teddziuba/2009/02/effective-vices-for-the-it-pro.html), I often find it more effective to write bad code and then improve it, rather than trying to get it perfect the first time. Often times the best design abstractions are obvious once the problem is already solved. 
 
+
 To demonstrate this, I'm taking a piece of somewhat ugly jQuery I wrote, that I then cleaned up with [BackboneJS](http://backbonejs.org). The Backbone refactors makes the code more [declarative](http://en.wikipedia.org/wiki/Declarative_programming) which makes the code's intent easier to understand and build upon with small, isolated functions. Isolating our code into smaller functions makes unit testing a lot more feasible, which part 2 of this post will demonstrate.
 
 When I first saw Backbone, it all seemed far too abstract for what I was trying to do. I was making AJAX calls and updating DOM elements - why do I need an entire MVC framework? It felt like over-engineering a non-problem.

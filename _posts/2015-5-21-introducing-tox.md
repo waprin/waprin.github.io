@@ -4,9 +4,9 @@ title: "Where I've Been + A Tox Tutorial, The Python Test
 Automation Framework"
 description: ""
 tags: [python, tox]
+
 ---
 {% include JB/setup %}
-
 >if it doesn’t come bursting out of you
 in spite of everything,
 don’t do it.
@@ -30,7 +30,8 @@ contrasts sharply with Jeff Atwood's of Coding Horror's advice to
  to the title of my first and only blog post was inserted
  to hopefully motivate me to finish the second part, but instead it's just 
  going to dangle [Mel Brooks' style](http://www.imdb.com/title/tt0082517/).
- 
+
+
 I was pretty amused to read Kris Horowitz's Medium post, [From Zero to Developer… Kind of](https://medium.com/in-beta/learning-to-code-ab596fd1c412)
 , when I read this paragraph
 
