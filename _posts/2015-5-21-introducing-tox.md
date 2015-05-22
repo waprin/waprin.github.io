@@ -44,7 +44,7 @@ go away. I've been trying to program since I was making beautiful music
 with QBasic's BEEP command, and I *still* feel like I don't know enough to 
 share with other people. 
 
-I actually have several drafts Part 2 drafts on how to write unit test for 
+I actually have several drafts for Part 2  on how to write unit test for 
 your Coffeescript 
 code, but I kept get deeper and deeper into rabbit holes. I knew I wanted to
  use [Karma](http://karma-runner.github.io/0.12/index.html) , and since a 
@@ -52,8 +52,9 @@ code, but I kept get deeper and deeper into rabbit holes. I knew I wanted to
  unless you used [require.js](http://requirejs.org/). Of course, a vanilla 
  requirejs setup has too much overhead for a production app, so then I 
  discovered I really wanted [almond](https://github.com/jrburke/almond) to 
- optimize it. Of course I needed a Grunt task to run this optimization only 
- for production builds. This ended up being a ton of boilerplate, so I needed 
+ optimize it. Of course I needed a [Grunt](http://gruntjs.com/) task to run 
+ this optimization only 
+for production builds. This ended up being a ton of boilerplate, so I needed 
  to learn 
   [Yeoman](http://yeoman.io/) to generate the correct setup. And on and on...
   
@@ -70,7 +71,7 @@ In any case, it never got finished, and this blog started to look like one of
   alcoholic 20th-century American writers 
   is pretty limited. And even if I ended up on the 
   West Coast, I think I'll always have some New York in me. So while for now 
-  I'll have to substitute my Big Apple for a kale smoothie - Gotham Coder 
+  I'll have to substitute my Big Apple with a kale smoothie - Gotham Coder 
   is back. 
   
 ## Introducing Tox, The Python Test Automation Framework
