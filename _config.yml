@@ -29,7 +29,7 @@ excerpt_separator: "\n\n\n"
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://gothamcoder.com
+production_url : http://waprin.io
 
 paginate: 5
 
@@ -90,7 +90,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : gothamcoder
+      short_name : waprin.io
     livefyre :
       site_id : 123
     intensedebate :
