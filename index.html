@@ -1,32 +1,26 @@
 ---
 layout: page
-title: Gotham Coder's Blog
-tagline: Savoring The Big Apple One Byte At A Time
+title: waprin.io
+tagline: fuzzy logic and digital daydreams
 ---
+{% include JB/setup %}
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date: "%-d %B %Y" }}</span>
-  </p>
-  <div class="content">
-    {{ post.excerpt }}
-    <a href="{{ post.url }}">Continue Reading...</a>
-  </div>
-{% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+<h1> Welcome </h1>
+<p>
+I am a software engineer living in San Francisco.
+</p>
+<p>
+I work for Google in the San Francisco office as a Developer Program Engineer for Google Cloud Platform.
+Previously, I spent four years working at two New York City startups, and before that I worked at a robotics
+company in the defense industry.
+</p>
+<p>
+  I am an avid poker player and electronic music fan. I am a proud owner of a Sphynx cat named Meemo.
+</p>
+<p>
+At the top, you click "Tech" to see my technical blog posts, or click "Blog" for my personal essays, musings,
+and rants.
+</p>
+<p>
+See the sidebars for links to my social media accounts.
+</p>

@@ -2,7 +2,8 @@
 layout: post
 title: "Refactoring jQuery Spaghetti With BackboneJS And Coffeescript (Part 1)"
 description: ""
-tags: [jQuery, backbone, coffeescript]
+category: tech
+tags: [jQuery, backbone, coffeescript, tech]
 ---
 {% include JB/setup %}
 
