@@ -46,7 +46,10 @@ No styleguide reference.
 @font-stack: consolas, monaco, monospace;
 @webfont: UbuntuMono-B, consolas, monaco, monospace;
 */
-font-family: 'Open Sans', sans-serif;
+@font-stack: 'Open Sans', sans-serif;
+@webfont: 'Open Sans', san-serif;
+
+
 /*
 Base font size should be larger than 16px.
 Calculation should be done via  http://j.mp/rNg5uA
@@ -58,6 +61,10 @@ body {
 	font-family: @font-stack;
 	font-size: @font-size / 16*1em;
 	line-height: @line-height / @em;
+}
+
+.logo {
+	font-family: UbuntuMono-B, consolas, monaco, monospace;
 }
 
 /*

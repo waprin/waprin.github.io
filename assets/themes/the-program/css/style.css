@@ -395,15 +395,22 @@ Font families
 No styleguide reference.
 */
 /*
+@font-stack: consolas, monaco, monospace;
+@webfont: UbuntuMono-B, consolas, monaco, monospace;
+*/
+/*
 Base font size should be larger than 16px.
 Calculation should be done via  http://j.mp/rNg5uA
 
 No styleguide reference.
 */
 body {
-  font-family: consolas, monaco, monospace;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1.625em;
+}
+.logo {
+  font-family: UbuntuMono-B, consolas, monaco, monospace;
 }
 /*
 Font size setting
@@ -418,7 +425,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
+  font-family: 'Open Sans', san-serif;
 }
 h1,
 .h1 {
@@ -577,7 +584,7 @@ pre {
   color: #f2f2f2;
   background-color: #393939;
   border: 1px solid #393939;
-  font-family: consolas, monaco, monospace;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 0;
   margin-right: 0;
   padding: 1.625em;
@@ -605,6 +612,9 @@ pre {
 .the-header .nav-global .forkme {
   position: relative;
   top: 2px;
+}
+div.vcard h3 {
+  font-family: UbuntuMono-B, consolas, monaco, monospace;
 }
 /* MAIN
 --------------------------------------------------------------------------------- */
@@ -727,7 +737,6 @@ pre {
 }
 .unit-article img {
   display: block;
-  margin-left: auto;
   margin-left: auto;
 }
 .unit-article img.left {
