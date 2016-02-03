@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : waprin.io
-tagline: fuzzy logic and digital daydreams
+tagline: fuzzy logic gate 
 author :
   name : Bill Prin
   email :
@@ -90,7 +90,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : waprin.io
+      short_name : gothamcoder
     livefyre :
       site_id : 123
     intensedebate :

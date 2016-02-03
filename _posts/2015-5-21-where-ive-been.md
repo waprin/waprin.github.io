@@ -3,7 +3,6 @@ layout: post
 title: Where I've Been 
 description: ""
 category: personal
-tags: [personal]
 ---
 
 >if it doesn’t come bursting out of you
