@@ -20,13 +20,6 @@ But look around at the top tech companies known for being great places to work a
 
 I think there are two factors to why a technical degree is a good indicator of a good company to work for. The first is that in terms of career advancement, people like people like themselves. They will promote them and create a culture where people similar to themselves will thrive and grow. How can they not? It's what they know and understand best, so to some extent it makes sense.
 
-Take one of my old CEOs, who was a Philosphy major and very much a sales type with virtually no engineering background. To nobody's surprise, he wrote a [blog post](https://www.knewton.com/resources/blog/ceo-jose-ferreira/stem-vs-humanities/) saying the following:
-
->It would be very interesting to design a study around all the companies nationally 
-that fit that profile, and see who gets promoted more to upper management. (It would also be interesting to see if that changes over time, or from country to country.) My bet is the non-STEM workers, as a group, tend to be more represented in upper management.
-
-Not shockingly, the non-STEM CEO suggest non-STEM employees are more likely to get promoted. It's hard not to deduce that he's drawing that conclusion because, amongst other things, *he's* more likely to promote non-STEM employees.
-
 The second factor is that as an engineer, you want to work on great products. You definitely don't want to work on mediocre products that succeed because they were marketed or sold well. However, many companies can succeed doing exactly that, and it should come as no surprise that those types of companies tend to be led by salesman and marketers. The CEO drives the focus of the company, and that focus to match your own.
 
 Incidentally, I have noticed that there are many successful sales and marketing driven companies, even beating companies with superior products. Yet the enormous winners at global scale tend to the ones with the best products. This is why the bohemoths of tech have emerged from the more product/engineering focus West Coast companies vs. New York companies that tend to be driven by sales and marketing types.
