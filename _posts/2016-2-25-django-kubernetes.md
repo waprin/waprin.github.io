@@ -13,7 +13,7 @@ This article was cross posted to Medium.com.
 
 Django is one of the most popular open-source web frameworks, and perhaps no Django user is more notable than Instagram, who went into deep detail on how they setup their Django stack on [their blog post](http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances). While they use a variety of technologies, the most prominent parts of the stack are Django, PostgreSQL, and Redis. This series of blog posts will go into detail on how to deploy the entire stack on [Kubernetes](http://kubernetes.io), although the first part will focus on just Django using a database not running in Kubernetes.
 
-This blog post is based on a presentation I gave to the Django San Francisco Meetup. You can check out this [slide deck](https://speakerdeck.com/waprin/deploying-django-on-kubernetes)..
+This blog post is based on a presentation I gave to the Django San Francisco Meetup. You can check out this [slide deck](https://speakerdeck.com/waprin/deploying-django-on-kubernetes).
 
 # Prerequisites 
 
@@ -120,9 +120,14 @@ For the initial setup, my Dockerfile extends a base image that accomplishes that
 # https://github.com/GoogleCloudPlatform/python-docker
 FROM gcr.io/google_appengine/python
 
+{% endhighlight %}
+
 Despite the name, this base Dockerfile is not specific to App Engine. You can follow the link to see exactly what’s installed.
 
 We also need to install whatever dependencies our app needs, and the easiest way to do that is to actually create a virtualenv inside our container and run a `pip install` as part of the Docker build step.
+
+
+{% highlight bash %}
 
 # Create a virtualenv for the application dependencies.
 # If you want to use Python 3, add the -p python3.4 flag.
@@ -252,6 +257,7 @@ Finally, go back to the root directory of the repo and cd into `kubernetes_confi
 
 We are creating a Replication Controller, that will create many Pods that run the image we created earlier. We specify 3 replicas to start, which means that if any container dies, our Replication Controller will replace it with a new one.
 
+<pre>
 {% highlight bash %}
 apiVersion: v1
 kind: ReplicationController
@@ -271,13 +277,11 @@ spec:
         # Replace  with your project ID or use `make template`
         image: waprin/my-guestbook-app 
 
-        # This setting makes nodes pull the docker image every time before
-        # starting the pod. This is useful when debugging, but should be turned
-        # off in production.
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
 {% endhighlight %}
+</pre>
 
 The first change we have to make is to use the image we created earlier. In the repo, I’m using : gcr.io/$GCLOUD_PROJECT/guestbook, because I pushed my image to Google Container Registry, which like the public Docker registry, but private to your Google project in case you want to keep your images secret. In any case, let’s replace it with the image I created earlier:
 
@@ -353,6 +357,3 @@ However, since each instance of our application controller has it’s own versio
 Please note that while I work for Google Cloud, this is not an official Google product or company statement.
 
 If you have any problems following this tutorial, ping me on the Github issue tracker or on Twitter. The next post will go through Postgres and Redis, hope you follow along!
-
-
-### (X-Posted from medium.com)

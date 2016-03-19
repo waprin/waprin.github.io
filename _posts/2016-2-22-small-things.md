@@ -42,6 +42,4 @@ But really, do you want to be working for these types of companies? As an employ
 
 There are some other small signs. While I'm not against fun startup perks, you should be concerned if they are giving the engineers nerf guns but not business development. It hints of a culture divide where the engineers are placated but not taken seriously. Similarly with dress code, if upper management is wearing jeans, then you absolutely can to, but if they let engineers wear jeans while the "adults" wear suits, that's indicative of a bridge in professional status that you don't want to have to withstand. Avoid.
 
-# Closing
-
 There are a lot of things to look for in a potential job, so no definitve list can encompass all the things you might need to consider. But if there's one takeway from this post, it's that things like professional status in the workplace matter, and will impact your opportunity for career growth and impact. So make sure you pick employers by considering how important they consider you, how much they respect you, and how much impact you think you will actually have on the world working there.

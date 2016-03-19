@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Refactoring jQuery Spaghetti With BackboneJS And Coffeescript (Part 1)"
+title: "Refactoring jQuery Spaghetti With BackboneJS And Coffeescript"
 description: ""
 category: tech
 tags: [jQuery, backbone, coffeescript, tech]
 ---
-{% include JB/setup %}
 
 # For Whom The Client Polls
 
@@ -305,6 +304,7 @@ _.bindall() a list of parameters, the first is an instance of a class ad the res
 
 Here's our final code put together:
 
+<pre>
 {% highlight coffeescript %}
     class League extends Backbone.Model
 
@@ -361,6 +361,7 @@ Here's our final code put together:
       leagues.fetch()
 
 {% endhighlight %}      
+</pre>
 
 While I admit that if you're not used to Backbone and Coffeescript, the above code may be a lot less familiar than the jQuery at the beginning, once I got used to it, I find this style much easier to work with. Also, since Backbone is a very popular library, other developers are more likely to be able to jump onto your project and understand what you are trying to accomplish.
 
