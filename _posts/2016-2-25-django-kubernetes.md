@@ -9,7 +9,7 @@ tags: [python, django, kubernetes]
 <img height="300" width="600" src=
 "{{ site.url }}/assets/djangokube.png" />
 
-This article was cross posted to Medium.com.
+[This article was cross posted to medium.com](https://medium.com/google-cloud/deploying-django-postgres-redis-containers-to-kubernetes-9ee28e7a146#.h8hmemm4n).
 
 Django is one of the most popular open-source web frameworks, and perhaps no Django user is more notable than Instagram, who went into deep detail on how they setup their Django stack on [their blog post](http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances). While they use a variety of technologies, the most prominent parts of the stack are Django, PostgreSQL, and Redis. This series of blog posts will go into detail on how to deploy the entire stack on [Kubernetes](http://kubernetes.io), although the first part will focus on just Django using a database not running in Kubernetes.
 
