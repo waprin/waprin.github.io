@@ -12,8 +12,6 @@ permalink: /about/
 
 <img width=30% height=30% style="float: right;" src="{{ site.url }}/assets/family.jpg" />
 
-Bill Prin is a Developer Programs Engineer for Google Cloud Platform. He lives in San Francisco with his  fiancée and sphynx cat.
-
-
+Bill Prin is a Software Engineer living in San Francisco. Most recently, he worked at Google as a Software Engineer building data pipelines. You can follow him on Twitter, Medium, or Github using the links above.
 
 [Jekyll theme](https://github.com/gfjaru/Kiko) courtsey of [gjfaru](https://twitter.com/gfjaru).
