@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
+permalink: /blog/
 ---
 <header class="masthead">
-  <h1 class="masthead-title">
-    <a href="{{ site.baseurl }}/">{{ site.name }}<span>.io</span></a>
-  </h1>
   <nav class="masthead-nav">
     {% for nav in site.nav %}
     <a href="{{ nav.href }}">{{ nav.name }}</a>

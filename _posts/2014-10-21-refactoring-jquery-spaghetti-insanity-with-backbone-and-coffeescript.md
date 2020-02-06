@@ -11,6 +11,7 @@ tags: [jQuery, backbone, coffeescript, tech]
 <img height="300" width="200" style="float: right;" src=
 "{{ site.url }}/assets/hemingway.jpg" />
 
+
 I'm a fan of what I call the Hemingway approach to development - code drunk, refactor sober. While I don't literally mean [that you need to be intoxicated to write software](http://widgetsandshit.com/teddziuba/2009/02/effective-vices-for-the-it-pro.html), I often find it more effective to write bad code and then improve it, rather than trying to get it perfect the first time. Often times the best design abstractions are obvious once the problem is already solved. 
 
 

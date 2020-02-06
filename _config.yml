@@ -10,13 +10,13 @@ baseurl:            ""
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
-# Markdown
-markdown:           rdiscount
 
 # Navigation
 nav:
   - name:           "About"
-    href:           "about"
+    href:           "/"
+  - name:           "Blog"
+    href:           "/blog"
 
 # Sass
 sass:
@@ -44,6 +44,3 @@ author:
   stackoverflow: 226773
   medium: waprin
   soundcloud: metawish
-
-disqus :
-  short_name : gothamcoder
