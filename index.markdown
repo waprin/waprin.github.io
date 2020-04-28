@@ -16,14 +16,15 @@
 <img height="300" width="300" style="float: right;" src=
 "{{ site.url }}/assets/waprin_profile.jpg" />
 
+<br />
+
 Hi, my name is Bill, and I'm a Software Engineer living in San Francisco.
+
+During the day, I work at an RF startup called Bastille, and as side project, I am the co-creator and sole developer of [All Day I Stream](https://alldayistream.com) 
+, a music livestream aggregator and Zoom party coordinator.
 
 You can click on the relevant social media links above for more information about me, including my LinkedIn, GitHub,
 and StackOverflow. The blog page contains some links to articles on this site and some external links.
 
 On weekends, you might find me surfing at Linda Mar in Pacifica or snowboarding at Northstar or Kirkwood in Tahoe. I love music,
 especially electronic music, and dabble in producing it, which you can check out on [my SoundCloud](https://soundcloud.com/metawish).
-
-
-
-[Jekyll theme](https://github.com/gfjaru/Kiko) courtsey of [gjfaru](https://twitter.com/gfjaru).
