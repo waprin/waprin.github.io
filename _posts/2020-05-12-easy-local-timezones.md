@@ -21,7 +21,7 @@ Javascript so I was looking for a way to do the timezone localization server sid
 I had previously mistakenly believed there were a few ways to accomplish this, none of which are great:
 
 * **Ask the user to create an account and specify their timezone preference**
-* **Require the user to provide their location to get local timezones.**
+* **Require the user to provide their location to get local timezones**
 * **Guess their timezone based on their IP address (not very accurate)**
 
 However, my friend and former colleague [Chris Broadfoot](https://twitter.com/broady) pointed out there's a better way
@@ -60,16 +60,22 @@ Once I have the timezone name, or the offset, I can use Python/Django's excellen
 
     if local_tz is None: # fall back to tzOffet which was obtained by new Date().getTimezoneOffset()
         tz = 'Local' 
-        tz_mapping = { # if we don't know the timezone , we can guess based on the offset
-            240: 'EDT',
-            300: 'CDT',
-            360: 'MDT',
-            420: 'PDT',
+        # if we don't know the timezone , we can guess based on the offset
+        # you have to manually fill this in with your best guess of a timezone based on offet, e.g. 240 -> EDT
+        tz_mapping = { 
+            'offset': 'timezone'
         }
         if tzOffset in tz_mapping: 
             tz = tz_mapping[tzOffset]
             
-     start_time: utc_start.strftime("%I:%M %p") # renders as 12:30 PDT
+    if local_tz is not None:
+        local_start = start_date.astimezone(local_tz)
+    else:
+        local_start = stream.start_date + datetime.timedelta(minutes=(-1 * tzOffset))
+        
+    start_time = utc_start.strftime("%I:%M %p") # renders as 12:30 PDT        
+            
+     
 ```
 
 And that's it! With this approach, I can let Python and Django do the heavy lifting of timezone localization and 
