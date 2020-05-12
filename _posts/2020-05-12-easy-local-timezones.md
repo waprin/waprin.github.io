@@ -70,6 +70,7 @@ Once I have the timezone name, or the offset, I can use Python/Django's excellen
         }
         if tzOffset in tz_mapping: 
             tz = tz_mapping[tzOffset]
+        local_start = start_date + datetime.timedelta(minutes=(-1 * tzOffset))
         start_time = local_start.strftime("%I:%M ") + tzName
      
 ```
