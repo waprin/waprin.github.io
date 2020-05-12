@@ -27,8 +27,7 @@ I had previously mistakenly believed there were a few ways to accomplish this, n
 However, my friend and former colleague [Chris Broadfoot](https://twitter.com/broady) pointed out there's a better way
 to accomplish this: Javascript! Of course, I'm sure it's possible to do this _all_ in frontend Javacript, but I know 
 Python a lot better and was hoping to leverage Python's datetime libraries to do the heavy lifiting. Fortunately, you
-only need a few lines of Javascript and can then let the server do the rest of the work.  
-However, If you have a favorite Javascript library to accomplish this, let me know on [Twitter](https://twitter.com/waprin_io).
+only need a few lines of Javascript and can then let the server do the rest of the work. However, If you have a favorite Javascript library to accomplish this, let me know on [Twitter](https://twitter.com/waprin_io).
 
 Any timezone you serve as part of your web page should not be delivered initially, but instead be served by an AJAX call.
 Before you make this AJAX call, you use Javascript to get the user's timezone or UTC offset, add that as a parameter to
