@@ -10,7 +10,7 @@ Recently, due to the pandemic, I built a webpage to aggregate musician and DJ
 livestreams on the web called [All Day I Stream](https://alldayistream.com). Most
 streams are on Twitch, however many are on Youtube, FB or Instagram Live, or custom 
 web pages. Additionally, Zoom parties around the livestream have been catching on 
-in a big way, so there's been a lot of focus on coordinating those parties.
+in a big way, so there's been a lot of focus on coordinating those parties. 
 
 Of course, people get annoyed if you don't render the start times of the stream in their local timezone, so while 
 we initially listed all the start times in EDT, one of the biggest initial complaints was for local timezone support.
@@ -55,27 +55,22 @@ Once I have the timezone name, or the offset, I can use Python/Django's excellen
     if tzInfo: # tzInfo is passed an AJAX parameter based on Intl.DateTimeFormat().resolvedOptions().timeZone
         try:
             local_tz = pytz.timezone(tzInfo)
+            local_start = start_date.astimezone(local_tz)
+            start_time = local_start.strftime("%I:%M %p") # renders as 12:30 PDT        
         except Exception as e:
-            print(f"failed to load timezone {tzInfo}")
-
-    if local_tz is None: # fall back to tzOffet which was obtained by new Date().getTimezoneOffset()
-        tz = 'Local' 
+            logger.info(f"failed to load timezone {tzInfo}")
+    
+    # only on a few old browsers, fall back to tzOffset which was obtained by new Date().getTimezoneOffset()
+    if local_tz is None: 
+        tzName = 'Local' # guess 'local' if we can't find it  in mapping 
         # if we don't know the timezone , we can guess based on the offset
         # you have to manually fill this in with your best guess of a timezone based on offet, e.g. 240 -> EDT
-        tz_mapping = { 
-            'offset': 'timezone'
+        tz_mapping = {
+          ... 
         }
         if tzOffset in tz_mapping: 
             tz = tz_mapping[tzOffset]
-            
-    if local_tz is not None:
-        local_start = start_date.astimezone(local_tz)
-    else:
-        local_start = stream.start_date + datetime.timedelta(minutes=(-1 * tzOffset))
-        # manually set timezone here based on tz offet guess
-        
-    start_time = utc_start.strftime("%I:%M %p") # renders as 12:30 PDT        
-            
+        start_time = local_start.strftime("%I:%M ") + tzName
      
 ```
 
