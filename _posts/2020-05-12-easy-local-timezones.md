@@ -72,6 +72,7 @@ Once I have the timezone name, or the offset, I can use Python/Django's excellen
         local_start = start_date.astimezone(local_tz)
     else:
         local_start = stream.start_date + datetime.timedelta(minutes=(-1 * tzOffset))
+        # manually set timezone here based on tz offet guess
         
     start_time = utc_start.strftime("%I:%M %p") # renders as 12:30 PDT        
             
