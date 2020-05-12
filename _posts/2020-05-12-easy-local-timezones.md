@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to easily render local timezones on a webpage without asking the user for their location
+title: How to show local timezones on a webpage without asking the user for their location
 description: ""
 categories: tech
 tags: [frontend, javascript, tech, django]
