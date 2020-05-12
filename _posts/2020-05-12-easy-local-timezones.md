@@ -25,15 +25,14 @@ I had previously mistakenly believed there were a few ways to accomplish this, n
 * **Guess their timezone based on their IP address (not very accurate)**
 
 However, my friend and former colleague [Chris Broadfoot](https://twitter.com/broady) pointed out there's a better way
-to accomplish this: Javascript!
+to accomplish this: Javascript! Of course, I'm sure it's possible to do this _all_ in frontend Javacript, but I know 
+Python a lot better and was hoping to leverage Python's datetime libraries to do the heavy lifiting. Fortunately, you
+only need a few lines of Javascript and can then let the server do the rest of the work.  
+However, If you have a favorite Javascript library to accomplish this, let me know on [Twitter](https://twitter.com/waprin_io).
 
-Basically, any timezone you serve as part of your web page should not be delivered initially, but behind an AJAX call.
-Before you make this AJAX call, you use Javacsript to get the user's timezone or UTC offset, add that as a parameter to
+Any timezone you serve as part of your web page should not be delivered initially, but instead be served by an AJAX call.
+Before you make this AJAX call, you use Javascript to get the user's timezone or UTC offset, add that as a parameter to
 the call, and then the server can use that to provide the local timezone.
-
-Of course, I'm sure it's possible to do this _all_ in frontend Javacript. However, I personally know Python better than
-Javascript, and I know it has great timezone libraries, so for me it was easier to have the Python server do it on
-the AJAX request. If you have a favorite Javascript library to accomplish this, let me know on [Twitter](https://twitter.com/waprin_io).
 
 # First, get the user's timezone
 
