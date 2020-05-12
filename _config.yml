@@ -13,10 +13,10 @@ permalink:          /:year/:month/:day/:title.html
 
 # Navigation
 nav:
-  - name:           "About"
-    href:           "/"
   - name:           "Blog"
-    href:           "/blog"
+    href:           "/"
+  - name:           "About"
+    href:           "/about"
 
 # Sass
 sass:
