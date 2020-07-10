@@ -7,7 +7,7 @@ tags: [frontend, javascript, tech, django]
 ---
 
 Recently, due to the pandemic, I built a webpage to aggregate musician and DJ
-livestreams on the web called [All Day I Stream](https://alldayistream.com). Most
+livestreams on the web called [All Night FM](https://allnight.fm) (July 2020 Edit, this was formerly alldayistream.com). Most
 streams are on Twitch, however many are on Youtube, FB or Instagram Live, or custom 
 web pages. Additionally, Zoom parties around the livestream have been catching on 
 in a big way, so there's been a lot of focus on coordinating those parties. 

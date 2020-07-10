@@ -22,8 +22,14 @@ permalink: /about
 
 Hi, my name is Bill, and I'm a Software Engineer living in San Francisco.
 
-During the day, I work at an RF startup called Bastille, and as side project, I am the co-creator and sole developer of [All Day I Stream](https://alldayistream.com) 
-, a music livestream aggregator and Zoom party coordinator.
+During the day, I work at an RF startup called Bastille, building data pipelines in Python. Previously, I worked
+at Google building machine learning pipelines to analyze mobile developer tools. Before that at Googe, I worked
+ on Google Cloud Platform developer relations building sample apps and client libraries. I also spent several 
+ years working at NYC startups after graduating with a Computer Science degree from Johns Hopkins University.
+ 
+ 
+My most recent side project is [All Night FM](https://allnight.fm), a COVID inspired tracker for music livestreams
+and associated Zoom parties. You can find some other defunct projects on my Github repositories.
 
 You can click on the relevant social media links above for more information about me, including my LinkedIn, GitHub,
 and StackOverflow. The blog page contains some links to articles on this site and some external links.
