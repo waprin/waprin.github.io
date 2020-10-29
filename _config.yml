@@ -6,7 +6,7 @@
 name:               "waprin"
 
 # URL
-baseurl:            "waprin.io"
+baseurl:            https://waprin.io
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
