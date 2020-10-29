@@ -20,21 +20,25 @@ permalink: /
 <div class="intro">
 
 <div class="intro-text">    
-<p>Hi, my name is Bill Prin. My legal name is William Prin, hence the initialization "waprin" that I use
-as an online professional alias, including this website's URL ('A' is my middle initial). 
+<p>Hi, my name is Bill Prin. My legal name is William Prin, and A is my middle initial, hence the initialization "waprin" that I use
+as an online professional alias, including this website's URL. 
+</p>
 
-I realize that many people don't always realize that William shortens to Bill, especially international people, it 
-doesn't make sense to me either - blame my parents :) ! </p>
+
+<p>
+Many people don't always realize that William shortens to Bill, especially international people. It 
+doesn't make sense to me either - blame my parents &#128540; ! 
+</p>
 
 <p>
 I am a software engineer living in the beautiful city of San Francisco, California. You can learn a
 little more about me by clicking on the "About" link above. I also occasionally write (mostly) technical 
-blog posts, some for employers, and many "just for fun"! They are linked below, with some hosted on this site
+blog posts, some for employers, and many "just for fun"! They are below, or via the "Blog" link above with some hosted on this site
 and some external links.
 </p>
 
 <p>
-The icons above also link to many of professional and social media presences.
+The icons above also link to my social media.
 </p>
 </div>
 
