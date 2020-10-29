@@ -14,7 +14,7 @@ title: Bill Prin's Personal Page
 
 tagline: Bill  Prin's Technical Blog
 
-description: This is the technical blog and about page for Bill Pfin aka William Prin
+description: This is the technical blog and about page for Bill Prin aka William Prin
 
 url: waprin.io
 
@@ -22,6 +22,8 @@ url: waprin.io
 nav:
   - name:           "Home"
     href:           "/"
+  - name:           "Blog"
+    href:           "/blog"
   - name:           "About"
     href:           "/about"
 
