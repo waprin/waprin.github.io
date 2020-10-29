@@ -34,7 +34,7 @@ and some external links.
 </p>
 
 <p>
-The icons above also link to many of professioanl and social media presences.
+The icons above also link to many of professional and social media presences.
 </p>
 </div>
 
