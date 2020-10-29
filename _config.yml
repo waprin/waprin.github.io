@@ -6,7 +6,7 @@
 name:               "waprin"
 
 # URL
-baseurl:            ""
+baseurl:            "waprin.io"
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
@@ -16,7 +16,7 @@ tagline: Bill  Prin's Technical Blog
 
 description: This is the technical blog and about page for Bill Prin aka William Prin
 
-url: waprin.io
+url: https://waprin.io
 
 # Navigation
 nav:
