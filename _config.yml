@@ -10,10 +10,17 @@ baseurl:            ""
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
+title: Bill Prin's Personal Page
+
+tagline: Bill  Prin's Technical Blog
+
+description: This is the technical blog and about page for Bill Pfin aka William Prin
+
+url: waprin.io
 
 # Navigation
 nav:
-  - name:           "Blog"
+  - name:           "Home"
     href:           "/"
   - name:           "About"
     href:           "/about"
@@ -44,3 +51,6 @@ author:
   stackoverflow: 226773
   medium: waprin
   soundcloud: metawish
+
+plugins:
+  - jekyll-seo-tag
