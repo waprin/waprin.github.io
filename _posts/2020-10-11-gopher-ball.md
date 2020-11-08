@@ -69,7 +69,7 @@ What is `something` variable supposed to be? I will review that now:
 
 ## Elastic Collision Physics
 
-The main concept to understand the bounce is Elastic Collision. This means a collision with no loss of energy. In the real world there would be some friction and loss of energy, but we can ignore that in our slime world. In an elastic collision, two equations apply, the Conservation of Momentum and Conservation of Kinetic Energy (this one only applying in elastic idealized collisions). The Conservation of Momentum states that:
+The main concept to understand the bounce is [Elastic Collision](https://en.wikipedia.org/wiki/Elastic_collision). This means a collision with no loss of energy. In the real world there would be some friction and loss of energy, but we can ignore that in our slime world. In an elastic collision, two equations apply, the Conservation of Momentum and Conservation of Kinetic Energy (this one only applying in elastic idealized collisions). The Conservation of Momentum states that:
 
 <img src="{{ site.url }}/assets/slime_images/momentum.png" />
 
