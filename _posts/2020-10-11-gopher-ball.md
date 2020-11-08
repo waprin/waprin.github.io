@@ -64,7 +64,7 @@ Like Bitcoin, the original creator of Slime Volleyball is unknown, though at lea
 {% endhighlight %}
 
 
-What is "something" variable supposed to be? I will review that now:
+What is `something` variable supposed to be? I will review that now:
 
 
 ## Elastic Collision Physics
