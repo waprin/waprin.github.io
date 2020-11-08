@@ -16,6 +16,8 @@ It will go over:
 * How Conservation of Momentum and Conservation of Kinetic Energy serve as the underlying equations for the calculations
 * Some practical tips on how to understand it intuitively, how to code it in up in a 2D game, and how the game physics diverges from real world physics
 
+This post was created while writing an implementation of [Slime Volleyball in Go using SDL 2](http://github.com/waprin/gopher-volleyball).
+
 # Background
 
 Slime Volleyball was a viral Java applet game that emerged around the year 2000, and I have many fond memories of playing it as a kid. I was watching Frances Campoy's excellent just for func video series where he coded up  a Go version of Flappy Bird, and I wanted to follow along with a different game, so I chose Slime Volleyball. However, when I got to the collision of the ball and the slime, I realized that I didn't understand how to correctly code it. So I started looking at some other implementations and tried to learn a little more about how the calculations are derived.
