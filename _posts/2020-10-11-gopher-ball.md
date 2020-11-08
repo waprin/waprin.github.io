@@ -83,9 +83,9 @@ However, the actual algebraic derivations are quite tricky, so we can take Wikip
 
 <img src="{{ site.url }}/assets/slime_images/final_elastic.png" />
 
-In our case, the slime is x1 with velocity v1 and mass m1, and the ball is at position x2 with velocity v2 and mass m2. 
+In our case, the slime is x1 with velocity v1 and mass m1, and the ball is at position `x2` with velocity `v2` and mass `m2`. 
 
-A helpful note, in this case x1 and x2 are the position values, which each have an (x,y) component. This (x,y) component represents the center of the circle (the slime itself is represented as a circle with the bottom half not rendered).
+A helpful note, in this case `x1` and `x2` are the position values, which each have an `(x,y)` component. This `(x,y)` component represents the center of the circle (the slime itself is represented as a circle with the bottom half not rendered).
 
 
 The parentheses in the Wikipedia equation represent the dot product, so we are taking the dot product of the difference in positions of the two circles and the difference in velocities, across the x-axis and y-axis. In the code this is represented by:
@@ -96,9 +96,16 @@ The parentheses in the Wikipedia equation represent the dot product, so we are t
 
 {% endhighlight %}
 
-There's a few important takeaways from the "angle free" collision equation. Our new velocities are based on the initial velocities with some change.  The change of the ball velocity has three components. The first is based on the ratio of the masses (2m1/(m1+m2)). The second term is a dot product divided by a distance. The third term is the vector difference of the two positions (x2-x1). Importantly, the first two terms are scalar values (just a magnitude with no direction), while only the third term has a vector value. 
+There's a few important takeaways from the "angle free" collision equation. Our new velocities are based on the initial velocities with some change.  The change of the ball velocity has three terms. 
 
-We can simplify things by making the slime mass m1 set to 1, and the ball mass m2 set to infinitesimal (rounds to 0), as if the slime has much more mass. This leaves the slime velocity unchanged, v1 = v1, since the velocity change is multiplied by the mass m2=0. This is a good simplification for the game since we don't want the slime itself to bounce.
+
+* The first term is based on the ratio of the masses `(2m1/(m1+m2))`. This will simplify to just `2`. 
+* The second term is a dot product divided by a distance. This will be a scalar value.
+* The third term is the vector difference of the two positions `(x2-x1)`.  This will be a vector value.
+
+Importantly, the first two terms are scalar values (just a magnitude with no direction), while only the third term has a vector value. 
+
+We can simplify things by making the slime mass `m1` set to `1`, and the ball mass `m2` set to infinitesimal (rounds to 0), as if the slime has much more mass. This leaves the slime velocity unchanged, `v1 = v1`, since the velocity change is multiplied by the mass m2=0. This is a good simplification for the game since we don't want the slime itself to bounce.
 
 The direction of the ball's velocity change is determined by the final `x2-x1` component, which is the vector difference between the two positions. That is also called the "normal" component of the collision, since it's in the direction perpendicular to the tangent line between the two circles. 
 
@@ -122,7 +129,7 @@ So the closer to the top of the slime hits, the more the ball will be affected b
 
 The final part of the equation is dividing by the distance between the two velocities, squared. In physics, it's very common to divide a vector by a distance to "normalize" it, which turns a vector into a distance of 1. This makes sense for when you're trying to calculate a direction without having the raw magnitudes affect the end result. My way of thinking about dividing by the distance squared is both the second (the dot product) and third terms (the direction) are being normalized, so only the relative masses affect the end calculations.
 
-Tying back to the HTML5/Javascript implementation, it's now clear that the "something" variable is the dot product value in the Wikipedia elastic collision equation, though normalized ahead of time.
+Tying back to the HTML5/Javascript implementation, it's now clear that the `something` variable is the dot product value in the Wikipedia elastic collision equation, though normalized ahead of time.
 
 ## Coding The Physics In The Game
 
