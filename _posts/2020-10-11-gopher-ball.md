@@ -28,7 +28,39 @@ Along the way reviewing other implementations, I stumbled upon hardmaru, who has
   
 Like Bitcoin, the original creator of Slime Volleyball is unknown, though at least one version was maintained by Quin Pendragon and Daniel Wedge. Reddit user /u/marler8997 decompiled the Java applet and rewrote it in Javascript for an HTML5 version which I used as a reference for my Go version. However, his collision physics code isn't exactly easy to understand.
 
-CODE GOES HERE
+{% highlight javascript %}
+
+
+ function collisionBallSlime(s) {
+   var dx = 2 * (ball.x - s.x);
+   var dy = ball.y - s.y;
+   var dist = Math.trunc(Math.sqrt(dx * dx + dy * dy));
+
+   var dVelocityX = ball.velocityX - s.velocityX;
+   var dVelocityY = ball.velocityY - s.velocityY;
+
+   if(dy > 0 && dist < ball.radius + s.radius && dist > FUDGE) {
+     var oldBall = {x:ball.x,y:ball.y,velocityX:ball.velocityX,velocityY:ball.velocityY};
+      ball.x = s.x + Math.trunc(Math.trunc((s.radius + ball.radius) / 2) * dx / dist);
+
+
+     ball.y = s.y + Math.trunc((s.radius + ball.radius) * dy / dist);
+     var something = Math.trunc((dx * dVelocityX + dy * dVelocityY) / dist);
+
+     if(something <= 0) {
+       ball.velocityX += Math.trunc(s.velocityX - 2 * dx * something / dist);
+       ball.velocityY += Math.trunc(s.velocityY - 2 * dy * something / dist);
+       if(     ball.velocityX < -MAX_VELOCITY_X) ball.velocityX = -MAX_VELOCITY_X;
+       else if(ball.velocityX >  MAX_VELOCITY_X) ball.velocityX =  MAX_VELOCITY_X;
+       if(     ball.velocityY < -MAX_VELOCITY_Y) ball.velocityY = -MAX_VELOCITY_Y;
+       else if(ball.velocityY >  MAX_VELOCITY_Y) ball.velocityY =  MAX_VELOCITY_Y;
+     }
+   }
+ }
+
+
+{% endhighlight %}
+
 
 What is "something" variable supposed to be? I will review that now:
 
@@ -56,7 +88,11 @@ A helpful note, in this case x1 and x2 are the position values, which each have 
 
 The parentheses in the Wikipedia equation represent the dot product, so we are taking the dot product of the difference in positions of the two circles and the difference in velocities, across the x-axis and y-axis. In the code this is represented by:
 
+{% highlight javascript %}
+
 (dx * dVelocityX + dy * dVelocityY)
+
+{% endhighlight %}
 
 There's a few important takeaways from the "angle free" collision equation. Our new velocities are based on the initial velocities with some change.  The change of the ball velocity has three components. The first is based on the ratio of the masses (2m1/(m1+m2)). The second term is a dot product divided by a distance. The third term is the vector difference of the two positions (x2-x1). Importantly, the first two terms are scalar values (just a magnitude with no direction), while only the third term has a vector value. 
 
@@ -74,7 +110,11 @@ As mentioned, the first term, the ratio of the masses, should simplify to 2, so 
 
 Again, in the code this looks like:
 
+{% highlight javascript %}
+
 (dx * dVelocityX + dy * dVelocityY)
+
+{% endhighlight %}
 
 So the closer to the top of the slime hits, the more the ball will be affected by the y-velocities, and the closer to the edge of the slime the ball hits, the more the ball will be affected by the x-velocities. This also aligns with our intuitive understanding of how the physics "should" work.
 
@@ -91,6 +131,12 @@ The first important step is detecting the collision itself. Fortunately, this is
 <img src="{{ site.url }}/assets/slime_images/gopher_col2.png" />  
 
 Once the collision is detected, you don't want to apply the calculations right away. This is because if you change velocity, but in the very next frame the ball is still colliding, the velocities will be recomputed again based on the new post-collision velocities, which won't be right and may create the ball to get stuck in some weird loop. So instead, once the collision is detected, we first move the ball away from the slime so that it's no longer colliding and then calculate the new velocities.
+
+{% highlight javascript %}
+
+  ball.x = s.x + Math.trunc(Math.trunc((s.radius + ball.radius) / 2) * dx / dist);
+  ball.y = s.y + Math.trunc((s.radius + ball.radius) * dy / dist);
+{% endhighlight %}
 
 Another detail that the HTML5 version applies is capping both the new x and y velocities at a maximum value. While this shouldn't be strictly necessary, it keeps the game more even paced and avoids a strange collision sending the ball rocketing.
 
