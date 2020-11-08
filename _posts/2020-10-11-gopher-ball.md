@@ -26,9 +26,9 @@ One option would be to just reach for a physics engine like Box2D, but I wanted 
   
 In most games, it's not super critical that the game physics closely match real world physics, and you often intentionally diverge from them either out of practical necessity or as an intentional part of the design. However, as humans we do have some intuition for how things work in the "real world" so having at least some understanding of how the real physics work is a good baseline to start from. Slime Volleyball physics both use some simplifications, some "fudge" factors, and then one major divergence from real world physics which I will review.
   
-Along the way reviewing other implementations, I stumbled upon hardmaru, a Google Brain researcher that uses Slime Volleyball to [compare reinforcement learning algorithms](https://github.com/hardmaru/slimevolleygym).
+Along the way reviewing other implementations, I stumbled upon [hardmaru](https://twitter.com/hardmaru), a Google Brain researcher that uses Slime Volleyball to [compare reinforcement learning algorithms](https://github.com/hardmaru/slimevolleygym).
   
-Like Bitcoin, the original creator of Slime Volleyball is unknown, though at least one version was maintained by Quin Pendragon and Daniel Wedge. Reddit user /u/marler8997 decompiled the Java applet and rewrote it in Javascript for an HTML5 version which I used as a reference for my Go version. However, his collision physics code isn't exactly easy to understand.
+Like Bitcoin, the original creator of Slime Volleyball is unknown, though at least one version was maintained by Quin Pendragon and Daniel Wedge. Reddit user /u/marler8997 decompiled the Java applet and rewrote it in Javascript for an [HTML5 version](https://www.reddit.com/r/gaming/comments/3b7j47/html5_version_of_slime_volleyball/) which I used as a reference for my Go version. However, his collision physics code isn't exactly easy to understand.
 
 {% highlight javascript %}
 
