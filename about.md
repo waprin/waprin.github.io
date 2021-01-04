@@ -35,4 +35,5 @@ You can click on the relevant social media links above for more information abou
 and StackOverflow. The blog page contains some links to articles on this site and some external links.
 
 On weekends, you might find me surfing at Linda Mar in Pacifica or snowboarding at Northstar or Kirkwood in Tahoe. I love music,
-especially electronic music, and dabble in producing it, which you can check out on [my SoundCloud](https://soundcloud.com/metawish).
+especially electronic music, and dabble in producing it, which you can check out on [my SoundCloud](https://soundcloud.com/metawish) 
+or [my new Soundcloud](https://soundcloud.com/fellfire).
