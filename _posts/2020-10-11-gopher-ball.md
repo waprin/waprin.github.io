@@ -20,7 +20,7 @@ This post was created while writing an implementation of [Slime Volleyball in Go
 
 # Background
 
-Slime Volleyball was a viral Java applet game that emerged around the year 2000, and I have many fond memories of playing it as a kid. I was watching [Frances Campoy's](https://twitter.com/francesc) excellent just for func video series where he coded up a [Go version of Flappy Bird](https://github.com/campoy/flappy-gopher), and I wanted to follow along with a different game, so I chose Slime Volleyball. However, when I got to the collision of the ball and the slime, I realized that I didn't understand how to correctly code it. So I started looking at some other implementations and tried to learn a little more about how the calculations are derived.
+Slime Volleyball was a viral Java applet game that emerged around the year 2000, and I have many fond memories of playing it as a kid. I was watching [Francesc Campoy's](https://twitter.com/francesc) excellent just for func video series where he coded up a [Go version of Flappy Bird](https://github.com/campoy/flappy-gopher), and I wanted to follow along with a different game, so I chose Slime Volleyball. However, when I got to the collision of the ball and the slime, I realized that I didn't understand how to correctly code it. So I started looking at some other implementations and tried to learn a little more about how the calculations are derived.
   
 One option would be to just reach for a physics engine like Box2D, but I wanted to learn more about the underlying physics, wanted to be able to tweak it more easily, and I didn't want to bring in a big dependency for what was ultimately just a few lines of code.
   
