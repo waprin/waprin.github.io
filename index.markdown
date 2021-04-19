@@ -14,32 +14,33 @@ permalink: /
 <a class="social" href="http://github.com/{{ site.author.github }}"><i class="fa fa-github"></i></a>
 <a class="social" href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}/"><i class="fa fa-stack-overflow"></i></a>
 <a class="social" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium"></i></a>
+<a class="social" href="https://twitch.tv/programmingwithprin"><i class="fa fa-twitch"></i></a>
 
 <h1>Welcome To Bill Prin's Personal Site</h1>
 
 <div class="intro">
 
 <div class="intro-text">    
-<p>Hi, my name is Bill Prin. My legal name is William Prin, and A is my middle initial, hence the initialization "waprin" that I use
-as an online professional alias, including this website's URL. 
+<p>Hi, my name is Bill Prin, and I'm a software engineer living in the beautiful city of San Francisco, California. I have a few online aliases, but
+my most common one is "waprin", short for William Arthur Prin (my legal name), hence the URL of this site.
 </p>
 
-
-<p>
-Many people don't always realize that William shortens to Bill, especially international people. It 
-doesn't make sense to me either - blame my parents &#128540; ! 
-</p>
-
-<p>
-I am a software engineer living in the beautiful city of San Francisco, California. You can learn a
-little more about me by clicking on the "About" link above. I also occasionally write (mostly) technical 
+<p>You can learn a little more about me by clicking on the "About" link above. I also occasionally write (mostly) technical 
 blog posts, some for employers, and many "just for fun"! They are below, or via the "Blog" link above with some hosted on this site
-and some external links.
+and some external links. I occasionally work on some fun side projects, which I've started to document better under the 
+"Projects" tab.
 </p>
 
 <p>
 The icons above also link to my social media.
 </p>
+
+<p>
+I recently started doing some programming livestreams on Twitch! Hope you can check some out. The channel is
+programmingwithprin .
+</p>
+
+
 </div>
 
 <div class="intro-pic">
