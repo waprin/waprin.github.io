@@ -15,7 +15,7 @@ permalink: /projects
 Like many programmers, besides my work at various full-time jobs, I have a huge graveyard of side projects. I started
 programming as a kid around the year 2000, and have had "the next big idea" many times. Most
 of these projects were very half-baked and belong in the graveyard, the details about them lost forever to the sands of time.
-However, I thought it'd be nice to write a little more about some of them here.
+However, I thought it'd be nice to write a little more about some of other others here.
 
 # All Night FM ([https://allnight.fm](https://allnight.fm))
 
