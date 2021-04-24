@@ -31,16 +31,6 @@ and some external links. I occasionally work on some fun side projects, which I'
 "Projects" tab.
 </p>
 
-<p>
-The icons above also link to my social media.
-</p>
-
-<p>
-I recently started doing some programming livestreams on Twitch! Hope you can check some out. The channel is
-programmingwithprin .
-</p>
-
-
 </div>
 
 <div class="intro-pic">
