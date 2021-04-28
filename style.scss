@@ -390,20 +390,30 @@ tbody tr:nth-child(odd) th {
 
 .intro {
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
-}
-
-.intro-pic {
-  width: 300px;
 }
 
 .intro-text {
   width: 50%;
 }
 
+.intro-pic {
+  width: 300px;
+}
+
+
+
 .intro-pic img {
   width: 300px;
   margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-text {
+   width: 100%;
+  }
+
 }
 
 
