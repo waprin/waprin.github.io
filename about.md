@@ -26,13 +26,6 @@ I currently work at Thumbtack, leading their "Growth Platform" efforts, building
 for marketing and analytics, and bridging the gap between data engineering, machine learning engineering, and 
 marketing teams.  
 
-# Some Personal Stuff
-
-On weekends, you might find me surfing at Linda Mar in Pacifica or snowboarding at Northstar or Kirkwood in Tahoe. I love music,
-especially electronic music, and dabble in producing it, which you can check out on [my SoundCloud](https://soundcloud.com/fellfire).
-
-I have a ton of Spotify playlists, this one named [low key beats](https://open.spotify.com/playlist/6wZxm7isXxamtczHgdhG1K?si=7CcnvWoLSOyRVIbJxpumhA) is the one I've been enjoying adding the most these days.
-
 
 # About This Site
 
