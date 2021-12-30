@@ -14,7 +14,7 @@ title: Bill Prin's Personal Page
 
 tagline: Bill  Prin's Technical Blog
 
-description: This is the technical blog and about page for Bill Prin aka William Prin
+description: Bill Prin's Personal Page (aka William Prin)
 
 url: https://waprin.io
 
@@ -54,6 +54,8 @@ author:
   linkedin: waprin
   stackoverflow: 226773
   medium: waprin
+  picture: "assets/waprin_profile.jpg"
+  name: "Bill Prin"
 
 plugins:
   - jekyll-seo-tag

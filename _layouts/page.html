@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-<header class="masthead">
-  <h1 class="masthead-title">
-    <a href="{{ site.baseurl }}/">{{ site.name }}<span>.io</span></a>
-  </h1>
-</header>      
-<div class="content page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+
+<div class="post-container">
+	<div class="post-list">
+		<span class="post-title">{{page.title}}</span>
+	</div>
+</div>
+<div class="blog-post-content">
+	<h1>{{page.title}}</h1>
+	{{ content }}
 </div>
