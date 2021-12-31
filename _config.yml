@@ -3,7 +3,7 @@
 # # # # # # # #
 
 # Basic
-name:               "waprin"
+name:               "billprin"
 
 # URL
 #baseurl:            https://waprin.io
@@ -16,7 +16,7 @@ tagline: Bill  Prin's Technical Blog
 
 description: Bill Prin's Personal Page (aka William Prin)
 
-url: https://waprin.io
+url: https://billprin.com
 
 # Navigation
 nav:
