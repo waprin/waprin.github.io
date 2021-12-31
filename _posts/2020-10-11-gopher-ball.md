@@ -3,7 +3,7 @@ layout: post
 title: The Curious Physics of Slime Volleyball
 description: ""
 categories: gamedev
-tags: [gamedev, python, go]
+tags: [gamedev, go]
 ---
 
 ## 2D Bouncing Balls Physics Tutorial (Elastic Collision)

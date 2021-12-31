@@ -20,25 +20,17 @@ While I've mostly done backend engineering, infrastructure, and
 operations professionally, I consider myself decent at frontend development. I also have non-trivial machine learning
 experience, mostly just implementing off-the-shelf algorithms.
 
-Like many engineers, I get easily distracted by new, shiny
-things. These days, I'm heavily inspired by IndieHackers
-and working on a small project I will release soon. I am
-also excited about blockchain and hoping to learn more about
-it in the years to come, especially Ethereum and Solana.
+These days, I'm very interested in developments around blockchain, web3, and ethereum.
 
 # Personal
 
-My legal first name is William, which is why some of my online aliases start with the letter 'w'.
+My legal first name is William and middle name is Arthur which is why I use
+'waprin' as my online identifier in some places.
 
 I live in San Francisco with my wife, daughter, two sphynx cats,
 and bernedoodle.
 
 Sometimes you might run into me surfing at Pacifica or Santa Cruz or snowboarding in Tahoe.
-
-I also have a SoundCloud where I produce silly electronic
-music every now and then. I used to link it from this site,
-but I've decided that my music is bad enough that if you want
-to hear it, you'll have to ask.
 
 
 # About This Site

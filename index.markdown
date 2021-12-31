@@ -9,9 +9,12 @@ permalink: /
         {% else %}
         <div class="post-list">
             <a class="post-title" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+<!--            {% for tag in post.tags %}
+                {{ tag }}
+            {% endfor %} -->
             <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%d.%m.%Y" }}</time>
         </div>
-        {% endif %}
+    {% endif %}
     {% endfor %}
     <h2>External Posts</h2>
     {% for post in site.posts %}
