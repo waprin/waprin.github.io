@@ -14,7 +14,7 @@ I believe skepticism is an important part of the conversation. I also believe th
 
 There are a huge amount of investors and influencers promoting the Web3 narrative, and they often make unsubstantiated or hand-wavy claims about the impact that Web3 can have. For example, I often see people claiming that blockchain or Ethereum could somehow address Apple App Store fees, even though I can't find any connection between blockchain and addressing how Apple locks down its hardware devices and takes cuts of apps deployed on them. So there's admittedly a lot of fluff out there and I hope to keep my writing on the topic more grounded in reality. 
 
-If someone in 2007 said, "iPhones are going to be a big part of the future of technology, because they will soon be able to teleport you to the other side of the world", that person would be a fool, but you'd be equally foolish to assume that just because the second half of that statement is untrue, it means the first half is untrue. Similarly, grandiose and inaccurate claims about the potential of blockchain technology does not invalidate legitimate usages of it.
+If someone in 2007 said, "iPhones are going to be a big part of the future of technology, because they will soon be able to teleport you to the other side of the world", that person would be a fool, but you'd be equally foolish to assume that just because the second half of that statement is untrue, it means the first half is untrue. Similarly, grandiose and inaccurate claims about the potential of blockchain technology do not invalidate legitimate usages of it.
 
 My goal for each problem is:
 
@@ -26,7 +26,9 @@ My goal for each problem is:
 
 Web3 has been used by a few communities to push future visions of the web, including the "semantic web" where web data is better structured with meaning than currently exists, and "the internet of things" where various devices other than traditional servers and personal computers more natively integrate over the internet. 
 
-Today, the most popular meaning of Web3 relates to the vision of a decentralized web that's been promoted by distributed systems engineers and since co-opted by the broader blockchain community, notably the venture capital firm Andreesen Horowitz. Some notable engineers who were early advocates for Web3 are Juan Benet who created IPFS, which is a decentralized file hosting solution, similar to Amazon Web Services S3 but without Amazon as a central authority. [Here's a talk from him from 2018 advocating for his vision](https://www.youtube.com/watch?v=l44z35vabvA).
+Today, the most popular meaning of Web3 relates to the vision of a decentralized web that's been promoted by distributed systems engineers and since co-opted by the broader blockchain community, notably the venture capital firm Andreesen Horowitz. 
+
+One key engineer who has been an advocate for Web3 ais Juan Benet who created IPFS, which is a decentralized file hosting solution, similar to Amazon Web Services S3 but without Amazon as a central authority. [Here's a talk from him from 2018 advocating for his vision](https://www.youtube.com/watch?v=l44z35vabvA). 
 
 The [Web3 foundation](https://web3.foundation/about/) was founded by [Dr. Gavin Wood](https://en.wikipedia.org/wiki/Gavin_Wood), a computer scientist notable for designing the Ethereum Rust client, the Ethereum smart contract language Solidity, and the Polkadot cryptocurrency invented to improve the scalability of blockchains by offering cross-chain compatibility solutions.  The foundation describes their mission as "to nurture cutting-edge applications for decentralized software protocols."
 
@@ -36,15 +38,6 @@ Similarly, while it's true that blockchain and cryptocurrency form a large part 
 
 Just like Javascript AJAX calls were not a necessary component of every Web2 solution, cryptocurrencies and blockchain are not a necessary component of every Web3 solution. However, most Web2 properties do make AJAX calls, and most Web3 solutions do use cryptocurrencies. But not all of them do, and in fact the first problem I'll look at - decentralized identities - doesn't require anyone to buy any cryptocurrency.
 
-## A Note on Problems
-
-I will strive to make the problems described in this series of posts very clear without marketing frills or hand waving. Still, I think it's worth noting that "describing a problem" can be a somewhat tricky challenge in some cases.
-
-For example, what problem existed that Twitch solved? Over a hundred million people use Twitch every month, so clearly some people are deriving a lot of value in it, but if you rewinded to 2007, the problem statement for something like Twitch would not be super obvious. Maybe the phrasing would be -  "I have a problem that I want to watch other people play my favorite video game and there's no good place to do so" ? I don't think in 2007 many would have been perceived that as a burning problem needing to be solved, but that didn't mean there wasn't value in creating Twitch.
-
-Even in less ambiguous cases, it can still be tricky to articulate what the problem is, as an example, Stripe. When Stripe came out, PayPal had been around for a decade, and worked great for many people and still works great for many people today. The biggest problem was that some people wanted to accept payments with their own visual branding instead of a PayPal button. Stripe is a big company now and solves many other problems, and has a huge valuation as a result. But there were already "good enough" solutions that existed before Stripe and Stripe only solves problems for a certain niche of people in the world (people involved in e-commerce). 
-
-Similarly, for many problems that blockchain solves, there are some existing "good enough" options even though blockchain solves them better, and many of the problems that blockchain solves are really targeted at a niche of people, and the fact that those problems are not relevant for everyone in the world doesn't mean they're not important problems with extremely valuable solutions.
 
 ## Problem #1: Owning Your Own Digital Identity & Fixing Authentication
 
@@ -76,13 +69,16 @@ It is true that public key cryptography has existed for a long time. Sysadmins o
 
 [MetaMask](https://metamask.io/) has implemented private key login via a Chrome extension and [now has 21 million users](https://decrypt.co/86263/ethereum-wallet-metamask-reports-21-million-users). In theory, something like this could have existed a long time ago. In practice, the existence of blockchains and the need for better UX for cryptocurrency incentivized much more investmenets in these tools. 
 
-Money can be a touchy topic in society, but money is an extremely powerful incentive. When most of the money being made on the internet was heading towards big tech companies, it's a shocker that the investments around authentication went into things that big tech companies cared about like OAuth2. Now cryptocurrency has created a new set of incentives around decentralized technology, so we are seeing better software for decentralized used cases. OAuth2 should be used for what it was intended to, which is for a web service to provide another web service with a user's data given that user's consent. It should not be used as a global digital identifier because that's too important to be owned by anyone but the individual themselves.
+Money can be a touchy topic in society, but money is an extremely powerful incentive. When most of the money being made on the internet was heading towards big tech companies, it's not surprising that the investments around authentication went into technologies that big tech companies cared about like OAuth2 that would give them greater control and power.
+
+Now cryptocurrency has created a new set of incentives around decentralized technology, so we are seeing better software for decentralized used cases. OAuth2 should be used for what it was intended to, which is for a web service to provide another web service with a user's data given that user's consent. It should not be used as a global digital identifier because that's too important to be owned by anyone but the individual themselves.
 
 ## But what if someone loses their private key?
 
 The next major problem you'll hear about is - what if someone loses their private key? They will lose access to that digital identity. Centralized services have methods to verify someone is who they say they are and reset the account.
 
-Incidentally, while public key cryptography has existed for decades, what blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets.
+Incidentally, while public key cryptography has existed for decades, what blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets, which
+are powered by smart contracts.
 
 Vitalik Buterin, one of the co-founders of Ethereum and one of it's most influential advocates has been pushing for more adoption of social recovery wallets for a long time, but still not enough people know it means. He explains really well in his blog post on the topic which is an absolute must-read for anyone in the space, as wallet security is super important and social recovery wallets introduce a decentralized way of doing so.
 
@@ -93,9 +89,10 @@ Some of you might already be familiar with multisig, which is a similar concept.
 
 The idea here is that you could give keys to your friends and family, then if you lose your key, use your friends to "vouch" for you and move the account.
 
-The problem with multisig is that it pushes a lot of the UX complexity down to the user who's forced to setup all these private keys and manage them. With social recovery wallets, the logic to recover is moved "server-side", or to the blockchain. This lets recovery be more dynamic, where someone can have one simple wallet with a simple interface that lets them have full control over their funds. But they can dynamically assign friends and family as "guardians". 
+The problem with multisig is that it pushes a lot of the UX complexity down to the user who's forced to setup all these private keys and manage them. With social recovery wallets, similar multisig logic is moved to smart contracts on the blockchain. This lets recovery be more dynamic, where someone can have one simple wallet with a simple interface that lets them have full control over their funds. But they can dynamically assign friends and family as "guardians" who can vote to reset the account to a new
+key.
 
-With social recover, instead of having to trust Google, you can choose who you trust, and instead say you trust a given set of friends and family. If you ever lose access to your private key, you told the network that if N of M vote to do so (where you pick the numbers N and M), then you can move your account to a new private key. You can also do this for transactions over a certain size, which if you do have cryptocurrencies, helps protect against theft.
+With social recovery, instead of having to trust Google, you can choose who you trust, and instead trust a given set of friends, family, and services. If you ever lose access to your private key, there is a smart contract encoded on the blockchain that syas that if some number of your guardians all agree (you pick the number) then you can move your account to a new private key. You can also do this to require approval from your friends before a certain amount of money moves out of your account, making theft significantly harder.
 
 Vitalik's expresses the importance of this better than I do in post:
 
@@ -103,6 +100,6 @@ Vitalik's expresses the importance of this better than I do in post:
 
 I agree with Vitalik that as the importance of our digital identity rises, we should control that identity, own it, and get to pick who we choose to help us recover that identity if it's ever compromised.
 
-Social recovery wallets are fundamentally based on the blockchain, and solve a huge problem relating to digital identity ownership that hasn't been solved previously with non-blockchain solutions.
+Social recovery wallets are based on smart contracts which fundamentally based on the blockchain, and solve a huge problem relating to digital identity ownership that hasn't been solved previously with non-blockchain solutions.
 
 This was the first problem that I wanted to write about. Stay tuned for more posts where I walk through some other problems that blockchain solves best.
