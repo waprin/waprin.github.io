@@ -8,7 +8,7 @@ tags: [web3, crypto, ethereum]
 
 <img src="{{ site.url }}/assets/images/web3_auth.jpeg" />
 
-Web3 is a polarizing topic these days. Many skeptics claim that blockchain does not solve any real problems, and that Web3 is merely a rebranding of cryptocurrency that is only being promoted to inflate the market values of those cryptocurrencies. One common refrain is that "blockchain is a solution in search of a problem."
+Web3 is a polarizing topic these days. Many skeptics claim that blockchain does not solve any real problems, and that Web3 is merely a rebranding of cryptocurrency that is only being promoted to increase the market values of those cryptocurrencies. One common refrain is that "blockchain is a solution in search of a problem."
 
 I believe skepticism is an important part of the conversation. I also believe that blockchain and Web3 do solve real problems that previously went unsolved. In this series of posts, I aim to articulate what those problems are and explain how Web3 and blockchain offer novel technology that solves those problems better than previous technological options.
 
@@ -35,9 +35,6 @@ The [Web3 foundation](https://web3.foundation/about/) was founded by [Dr. Gavin 
 So what exactly is the difference between Web3, blockchain, and cryptocurrency? You can think of blockchain and cryptocurrency as technological implementation details, and Web3 as the communities, businesses, and social relationships that form on top of that technology. A similar analogy would be the original World Wide Web, which could have been construed as a rebrand of the underlying technologies of HTML over HTTP over TCP/IP. Those protocols have served as the foundation for virtually all web content for the last 30 years, but it'd certainly be unfair to describe "the Web" as merely a rebranding of HTML/HTTP/TCP/IP since what happens on top of those protocols is much bigger than just the protocols themselves.
 
 Similarly, while it's true that blockchain and cryptocurrency form a large part of the underlying Web3 technology, what's happening on top of those implementation details is much bigger than just those protocols and currencies themselves.
-
-Just like Javascript AJAX calls were not a necessary component of every Web2 solution, cryptocurrencies and blockchain are not a necessary component of every Web3 solution. However, most Web2 properties do make AJAX calls, and most Web3 solutions do use cryptocurrencies. But not all of them do, and in fact the first problem I'll look at - decentralized identities - doesn't require anyone to buy any cryptocurrency.
-
 
 ## Problem #1: Owning Your Own Digital Identity & Fixing Authentication
 
