@@ -61,11 +61,12 @@ Many people, including myself, believe that the individual should be able to own
 
 ### Describe How Web3 Fixes This
 
-Web3 introduces wallets that use public key cryptography to let people identify via a private key owned by themselves instead of a [OAuth2 login](https://oauth.net/2/) provided by a corporation.
+Web3 introduces wallets that use public key cryptography to let people identify via a private key owned by themselves instead of a [OAuth2 login](https://oauth.net/2/) provided by a corporation. It also introduces authentication via a smart contract that enables advances features like social recovery, which lets you recover your account if you lose
+your key via a smart contract that takes votes from guardians (friends or paid services).
 
-Many people object to the idea that blockchain is the solution here. The first objection will be that public key cryptography has existed for decades and blockchain does not introduce anything new and is unnecessary. The other objection is that the UX is not ready because if someone loses their private key they will lose access to their identity and we need centralized authorities to offer services such as password reset. All of these objections are inaccurate.
+Many people object to the idea that blockchain is the solution here. The first objection will be that public key cryptography has existed for decades and blockchain does not introduce anything new. The other objection is that the UX is not ready because if someone loses their private key they will lose access to their identity and we need centralized authorities to offer services such as password reset. 
 
-It is true that public key cryptography has existed for a long time. Sysadmins often use private keys to quickly login to their servers and manage who has access to what. It works great. So why have we failed to see this adopted? The simple answer is that the UX has been really bad. Regular users are not going to fiddle around with a CLI or key management.
+It is true that public key cryptography has existed for a long time. Sysadmins often use private keys to quickly login to their servers and manage who has access to what. It works great. So why have we failed to see this adopted by the broader public? The simple answer is that the UX has been really bad. Regular users are not going to fiddle around with a CLI or key management.
 
 [MetaMask](https://metamask.io/) has implemented private key login via a Chrome extension and [now has 21 million users](https://decrypt.co/86263/ethereum-wallet-metamask-reports-21-million-users). In theory, something like this could have existed a long time ago. In practice, the existence of blockchains and the need for better UX for cryptocurrency incentivized much more investmenets in these tools. 
 
@@ -77,8 +78,7 @@ Now cryptocurrency has created a new set of incentives around decentralized tech
 
 The next major problem you'll hear about is - what if someone loses their private key? They will lose access to that digital identity. Centralized services have methods to verify someone is who they say they are and reset the account.
 
-Incidentally, while public key cryptography has existed for decades, what blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets, which
-are powered by smart contracts.
+What blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets, which are powered by smart contracts.
 
 Vitalik Buterin, one of the co-founders of Ethereum and one of it's most influential advocates has been pushing for more adoption of social recovery wallets for a long time, but still not enough people know it means. He explains really well in his blog post on the topic which is an absolute must-read for anyone in the space, as wallet security is super important and social recovery wallets introduce a decentralized way of doing so.
 
@@ -87,7 +87,7 @@ Go ahead and read his post, [Why we need wide adoption of social recovery wallet
 
 Some of you might already be familiar with multisig, which is a similar concept. With multisig, instead of having a single private key, you can have many private keys (say 6), and recover the identity if some number sign off (say 4). 
 
-The idea here is that you could give keys to your friends and family, then if you lose your key, use your friends to "vouch" for you and move the account.
+The idea here is that you could give keys to your friends and family, or to some sort of business service, then if you lose your key, use your friends to "vouch" for you and move the account to a new key.
 
 The problem with multisig is that it pushes a lot of the UX complexity down to the user who's forced to setup all these private keys and manage them. With social recovery wallets, similar multisig logic is moved to smart contracts on the blockchain. This lets recovery be more dynamic, where someone can have one simple wallet with a simple interface that lets them have full control over their funds. But they can dynamically assign friends and family as "guardians" who can vote to reset the account to a new
 key.
