@@ -78,6 +78,8 @@ It is true that public key cryptography has existed for a long time. Sysadmins o
 
 Money can be a touchy topic in society, but money is an extremely powerful incentive. When most of the money being made on the internet was heading towards big tech companies, it's a shocker that the investments around authentication went into things that big tech companies cared about like OAuth2. Now cryptocurrency has created a new set of incentives around decentralized technology, so we are seeing better software for decentralized used cases. OAuth2 should be used for what it was intended to, which is for a web service to provide another web service with a user's data given that user's consent. It should not be used as a global digital identifier because that's too important to be owned by anyone but the individual themselves.
 
+## But what if someone loses their private key?
+
 The next major problem you'll hear about is - what if someone loses their private key? They will lose access to that digital identity. Centralized services have methods to verify someone is who they say they are and reset the account.
 
 Incidentally, while public key cryptography has existed for decades, what blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets.
