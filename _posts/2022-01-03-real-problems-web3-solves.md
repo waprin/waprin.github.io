@@ -28,7 +28,7 @@ Web3 has been used by a few communities to push future visions of the web, inclu
 
 Today, the most popular meaning of Web3 relates to the vision of a decentralized web that's been promoted by distributed systems engineers and since co-opted by the broader blockchain community, notably the venture capital firm Andreesen Horowitz. 
 
-One key engineer who has been an advocate for Web3 ais Juan Benet who created IPFS, which is a decentralized file hosting solution, similar to Amazon Web Services S3 but without Amazon as a central authority. [Here's a talk from him from 2018 advocating for his vision](https://www.youtube.com/watch?v=l44z35vabvA). 
+One key engineer who has been an advocate for Web3 is Juan Benet who created IPFS, which is a decentralized file hosting solution, similar to Amazon Web Services S3 but without Amazon as a central authority. [Here's a talk from him from 2018 advocating for his vision](https://www.youtube.com/watch?v=l44z35vabvA). 
 
 The [Web3 foundation](https://web3.foundation/about/) was founded by [Dr. Gavin Wood](https://en.wikipedia.org/wiki/Gavin_Wood), a computer scientist notable for designing the Ethereum Rust client, the Ethereum smart contract language Solidity, and the Polkadot cryptocurrency invented to improve the scalability of blockchains by offering cross-chain compatibility solutions.  The foundation describes their mission as "to nurture cutting-edge applications for decentralized software protocols."
 
