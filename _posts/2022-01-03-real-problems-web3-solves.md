@@ -48,11 +48,11 @@ The most common original solution for identity on the web was creating combinati
 
 The weaknesses of username and passwords is that it's tedious to create them on many different sites and they are not very interoperable between sites without compromising security.
 
-To solve the interoperability of data, the suite of OAuth protocols (namely OAuth2) were created, which makes it more straightforward for one web app to get scoped permissions to access the data of the user on another webapp.
+To solve the interoperability of data, the suite of OAuth protocols (namely OAuth2) was created, which makes it more straightforward for one web app to get scoped permissions to access the data of the user on another webapp.
 
 OAuth2 is mostly a great thing (you can find plenty of criticism about a lot of the details, but the high level idea mostly works). However, it's gotten repurposed to not just be for data interoperability but for identity in general.  People "login" across the web using their Google OAuth or Facebook OAuth login.
 
-The problem we've created is that we've handed ownership of our digital identity - which gets more important with each passing year - to a private company to whom we're not especially important and who owes us nothing in particular. Sure, many mostly trust Google, but there's many good reasons not to trust it, and on principle, it's wrong if we build a world where Sundar Pinchai or whoever is leading Google that day has the arbitrary power to delete your identity from the broader internet. 
+The problem we've created is that we've handed ownership of our digital identity - which gets more important with each passing year - to a private company to whom we're not especially important and who owes us nothing in particular. Sure, many mostly trust Google, but there's many good reasons not to trust it, and on principle, it's wrong if we build a world where Sundar Pichai or whoever is leading Google that day has the arbitrary power to delete your identity from the broader internet. 
 
 Many people, including myself, believe that the individual should be able to own their own identity. 
 
@@ -69,15 +69,15 @@ It is true that public key cryptography has existed for a long time. Sysadmins o
 
 Money can be a touchy topic in society, but money is an extremely powerful incentive. When most of the money being made on the internet was heading towards big tech companies, it's not surprising that the investments around authentication went into technologies that big tech companies cared about like OAuth2 that would give them greater control and power.
 
-Now cryptocurrency has created a new set of incentives around decentralized technology, so we are seeing better software for decentralized used cases. OAuth2 should be used for what it was intended to, which is for a web service to provide another web service with a user's data given that user's consent. It should not be used as a global digital identifier because that's too important to be owned by anyone but the individual themselves.
+Now cryptocurrency has created a new set of incentives around decentralized technology, so we are seeing better software for decentralized use cases. OAuth2 should be used for what it was intended to, which is for a web service to provide another web service with a user's data given that user's consent. It should not be used as a global digital identifier because that's too important to be owned by anyone but the individual themselves.
 
 ## But what if someone loses their private key?
 
 The next major problem you'll hear about is - what if someone loses their private key? They will lose access to that digital identity. Centralized services have methods to verify someone is who they say they are and reset the account.
 
-What blockchain now introduces that solves this "lost keys" solution is called Social Recovery Wallets, which are powered by smart contracts.
+What blockchain now introduces that solves this "lost keys" problem is called Social Recovery Wallets, which are powered by smart contracts.
 
-Vitalik Buterin, one of the co-founders of Ethereum and one of it's most influential advocates has been pushing for more adoption of social recovery wallets for a long time, but still not enough people know it means. He explains really well in his blog post on the topic which is an absolute must-read for anyone in the space, as wallet security is super important and social recovery wallets introduce a decentralized way of doing so.
+Vitalik Buterin, one of the co-founders of Ethereum and one of it's most influential advocates has been pushing for more adoption of social recovery wallets for a long time, but still not enough people know it means. He explains this really well in his blog post on the topic which is an absolute must-read for anyone in the space, as wallet security is super important and social recovery wallets introduce a decentralized way of doing so.
 
 Go ahead and read his post, [Why we need wide adoption of social recovery wallets
 ](https://vitalik.ca/general/2021/01/11/recovery.html).
@@ -89,14 +89,14 @@ The idea here is that you could give keys to your friends and family, or to some
 The problem with multisig is that it pushes a lot of the UX complexity down to the user who's forced to setup all these private keys and manage them. With social recovery wallets, similar multisig logic is moved to smart contracts on the blockchain. This lets recovery be more dynamic, where someone can have one simple wallet with a simple interface that lets them have full control over their funds. But they can dynamically assign friends and family as "guardians" who can vote to reset the account to a new
 key.
 
-With social recovery, instead of having to trust Google, you can choose who you trust, and instead trust a given set of friends, family, and services. If you ever lose access to your private key, there is a smart contract encoded on the blockchain that syas that if some number of your guardians all agree (you pick the number) then you can move your account to a new private key. You can also do this to require approval from your friends before a certain amount of money moves out of your account, making theft significantly harder.
+With social recovery, instead of having to trust Google, you can choose who you trust, and instead trust a given set of friends, family, and services. If you ever lose access to your private key, there is a smart contract encoded on the blockchain that says that if some number of your guardians all agree (you pick the number) then you can move your account to a new private key. You can also do this to require approval from your friends before a certain amount of money moves out of your account, making theft significantly harder.
 
-Vitalik's expresses the importance of this better than I do in post:
+Vitalik's expresses the importance of this better than I do in his post:
 
 > To me, the goal of crypto was never to remove the need for all trust. Rather, the goal of  crypto is to give people access to cryptographic and economic building blocks that give people more choice in whom to trust, and furthermore allow people to build more constrained forms of trust: giving someone the power to do some things on your behalf without giving them the power to do everything
 
 I agree with Vitalik that as the importance of our digital identity rises, we should control that identity, own it, and get to pick who we choose to help us recover that identity if it's ever compromised.
 
-Social recovery wallets are based on smart contracts which fundamentally based on the blockchain, and solve a huge problem relating to digital identity ownership that hasn't been solved previously with non-blockchain solutions.
+Social recovery wallets are based on smart contracts which are fundamentally based on the blockchain, and solve a huge problem relating to digital identity ownership that hasn't been solved previously with non-blockchain solutions.
 
 This was the first problem that I wanted to write about. Stay tuned for more posts where I walk through some other problems that blockchain solves best.
