@@ -100,3 +100,5 @@ I agree with Vitalik that as the importance of our digital identity rises, we sh
 Social recovery wallets are based on smart contracts which are fundamentally based on the blockchain, and solve a huge problem relating to digital identity ownership that hasn't been solved previously with non-blockchain solutions.
 
 This was the first problem that I wanted to write about. Stay tuned for more posts where I walk through some other problems that blockchain solves best.
+
+I submitted this post to Hacker News, where it generated over 300 thoughtful comments, you can read those comments with [this link](https://news.ycombinator.com/item?id=29797310).
