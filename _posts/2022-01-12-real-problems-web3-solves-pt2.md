@@ -34,7 +34,7 @@ It's impossible to understand any revolution without understanding the historica
 
 <img src="{{ site.url }}/assets/images/justforfun.jpeg" height="400"/>
 
-In 1991, a 22 year old Finnish student named Linus Torvalds started writing an open source operating system. If at the time, someone asked him what problems his s, he'd probably tell you that it didn't solve any problems. It merely scratched his own itch to build an operating system where all the code was open for everyone.
+In 1991, a 22 year old Finnish student named Linus Torvalds started writing an open source operating system. If at the time, someone asked him what problems his project solved, he'd probably tell you that it didn't solve any problems. It merely scratched his own itch to build an operating system where all the code was open for everyone.
 
 You could easily find much more functional operating systems such as SunOS developed by Sun Microsystems. Linus set out not to solve a problem, but simply to have fun, as the name of his memoir suggests. He was creating a toy.
 
