@@ -110,7 +110,7 @@ It's very important that our financial markets are fair. It's bad if market part
  
 ### Describe the Existing Solution
 
-Why do the existing financial markets not have such a great reputation? In large part, because they're unfair. '
+Why do the existing financial markets not have such a great reputation? In large part, because they're unfair.
 
 <img src="{{ site.url }}/assets/images/darkpools.jpeg" height="400"/>
 
