@@ -13,7 +13,6 @@ tags: [web3, crypto, ethereum]
 
 I also wrote about how blockchains solve one of the key UX issues of decentralized authentication - loss of private key - via social recovery wallets on smart contracts, novel technology unique to blockchains.
 
-
 The post generated over 300 comments with a lot of thoughtful discussion on Hacker News, [which you can read here](https://news.ycombinator.com/item?id=29797310).
 
 
@@ -25,9 +24,9 @@ To reiterate my goal for each problem in this series, after some introductory te
 
 This blog post series is semi-technical and some background in software engineering is helpful but not required. If you want an amazing, interactive walkthrough of the elliptic curve mathematics form the foundation of blockchain, I'd highly recommend  Andrej Karpathy's post titled [A from-scratch tour of Bitcoin in Python](http://karpathy.github.io/2021/06/21/blockchain/). Andrej is a leading deep learning researcher and the Director of Artifical Intelligence at Tesla. For now, let's just read the first line:
 
-> I find blockchain fascinating because it extends open source software development to open source + state. 
+> I find blockchain fascinating because it extends open source software development to open source + state. This seems to be a genuine/exciting innovation in computing paradigms; We don’t just get to share code, we get to share a running computer, and anyone anywhere can use it in an open and permissionless manner. The seeds of this revolution arguably began with Bitcoin...
 
-I think there's a lot more insight in that line than one might pick up on first read, so hold that thought, as it serves as the foundation for the rest of this post.
+There's a lot of insight in that introduction and it serves as the foundatin for everything else in this post.
 
 It's impossible to understand any revolution without understanding the historical context in which it took place. In the case of the blockchain revolution, it has stood on the shoulders of a giant revolution that took place before it and to which it's deeply indebted. This preceding revolution is notable in part because it's leader started it entirely by accident. The leader's name was Linus Torvalds, and his revolution was named Linux.
 
