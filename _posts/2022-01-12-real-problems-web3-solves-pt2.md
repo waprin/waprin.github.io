@@ -159,7 +159,7 @@ But I'll give Plaid credit that they tried to solve a problem that the TradFi se
 
 TradFi is not interested in keeping up with the technological pace of the web _except_ when it comes to their backend trading systems that professionals make money on. As previously mentioned, TradFi is _very_ advanced if not more advanced than many Silicon Valley tech darlings when it comes to making themselves money with advanced trading systems. They just haven't extended that passion for technology to the software they offer their customers.
 
-Decentralized finance also offers a lot more transparency than we're used to in the TradFi sector (Traditional Finance). It moves at a faster pace because it's open source. For example, if you're curious how [Magic Internet Money](https://abracadabra.money/) (MIM) provides decentralized lending, you can a site like etherscan.deth.net to read their whole underlying smart contract straight from the ethereum blockchain right into your web browser.
+Decentralized finance also offers a lot more transparency than we're used to in the TradFi sector. It moves at a faster pace because it's open source. For example, if you're curious how [Magic Internet Money](https://abracadabra.money/) (MIM) provides decentralized lending, you can a site like etherscan.deth.net to read their whole underlying smart contract straight from the ethereum blockchain right into your web browser.
 
 Check that out right here: [MIM smart contract code via etherscan.deth.net](https://etherscan.deth.net/address/0x59e9082e068ddb27fc5ef1690f9a9f22b32e573f)
 
