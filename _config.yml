@@ -10,11 +10,11 @@ name:               "billprin"
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
-title: Bill Prin's Personal Page
+title: Bill Prin's Tech Blog
 
-tagline: Bill  Prin's Technical Blog
+tagline: Bill  Prin's Tech Blog
 
-description: Bill Prin's Personal Page (aka William Prin)
+description: Bill Prin's Tech Blog
 
 url: https://billprin.com
 
