@@ -13,9 +13,6 @@ tags: [web3, crypto, ethereum]
 
 I also wrote about how blockchains solve one of the key UX issues of decentralized authentication - loss of private key - via social recovery wallets on smart contracts, novel technology unique to blockchains.
 
-The post generated over 300 comments with a lot of thoughtful discussion on Hacker News, [which you can read here](https://news.ycombinator.com/item?id=29797310).
-
-
 To reiterate my goal for each problem in this series, after some introductory text providing some context, I aim to:
 
 1. Clearly describe what the problem is and why it matters
@@ -153,7 +150,7 @@ This is the burgeoning field of Decentralized Finance (DeFi) which is taking on 
 
 Some may object to DeFi being web3, since finance seems so distant from the fun world of consumer web we've grown used to. But if anything the divergence of consumer finance from consumer web is a reflection of slow innovation in the TradFi sector. In part of 1 of this series, and I mentioned that OAuth became a standard for data exchange. Despite that, companies like Plaid had to spring up to add OAuth to financial products because the finance companies chose not to do it themselves despite massive demand. 
 
-Because of this, Plaid's whole business model is based on a incredibly broken security model. If you suggested Plaid's security model at a Google or Amazon or Pinterest (shoutout) systems design interview, you'd get walked out the door as a no-hire, becaues it's fundamentally broken .  See the post, [Plaid is still a phishing site](https://thekeesh.com/2020/01/plaid-is-still-a-phishing-site/). I can't let anyone build an app on my Bank Of America account without putting my password at unnecessary risk and exposing _all_ of my financial data instead of selecting the data I am comfortable sharing with app. The whole thing is an abject security disaster, nobody who understands cybersecurity could make a good faith argument otherwise, yet everyone looks past it because there was no other way for our financial data to be "programmable" - for example so someone can make a budgeting app such as Mint. 
+Because of this, Plaid's whole business model is based on a incredibly broken security model. If you suggested Plaid's security model at a Google or Amazon systems design interview, you'd get walked out the door as a no-hire, becaues it's fundamentally broken .  See the post, [Plaid is still a phishing site](https://thekeesh.com/2020/01/plaid-is-still-a-phishing-site/). I can't let anyone build an app on my Bank Of America account without putting my password at unnecessary risk and exposing _all_ of my financial data instead of selecting the data I am comfortable sharing with app. The whole thing is an abject security disaster, nobody who understands cybersecurity could make a good faith argument otherwise, yet everyone looks past it because there was no other way for our financial data to be "programmable" - for example so someone can make a budgeting app such as Mint. 
 
 But I'll give Plaid credit that they tried to solve a problem that the TradFi sector refused to solve themselves. I also think it's very notable that despite RobinHood being the trading darling of millennials and zoomer generation, they don't have an official API. TradFi is consistently a decade behind consumer web innovation.
 
