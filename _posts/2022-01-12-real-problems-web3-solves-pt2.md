@@ -9,15 +9,7 @@ tags: [web3, crypto, ethereum]
 <img src="{{ site.url }}/assets/images/webuywesell.jpeg" height="400"/>
 
 
-[In Part 1 of this series](https://billprin.com/2022/01/03/real-problems-web3-solves.html), I addressed why web3 is much more than a rebranding of cryptocurrency. I wrote about how web3 has onboarded tens of millions on users onto decentralized auth, a problem that preeminent web companies like Mozilla attempted to solve with products like [Persona](https://en.wikipedia.org/wiki/Mozilla_Persona), and shut down due to lack of traction. 
-
-I also wrote about how blockchains solve one of the key UX issues of decentralized authentication - loss of private key - via social recovery wallets on smart contracts, novel technology unique to blockchains.
-
-To reiterate my goal for each problem in this series, after some introductory text providing some context, I aim to:
-
-1. Clearly describe what the problem is and why it matters
-1. Clearly describe what non-Web3 solutions already exist and in what ways they’re deficient
-1. Clearly describe how Web3 and blockchain solutions address the problem in better ways than existing options
+Click here to start at [Part 1 of this series](https://billprin.com/2022/01/03/real-problems-web3-solves.html).
 
 This blog post series is semi-technical and some background in software engineering is helpful but not required. If you want an amazing, interactive walkthrough of the elliptic curve mathematics that form the foundation of blockchain, I'd highly recommend  Andrej Karpathy's post titled [A from-scratch tour of Bitcoin in Python](http://karpathy.github.io/2021/06/21/blockchain/). Andrej is a leading deep learning researcher and the Director of Artifical Intelligence at Tesla. For now, let's just read the first line:
 
