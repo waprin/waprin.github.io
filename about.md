@@ -15,12 +15,6 @@ a Developer Programs Engineer for Google Cloud and a
 Software Engineer on the Mobile Productivity team focused 
 on data analytics of internal mobile developers.
 
-While I've mostly done backend engineering, infrastructure, and
-operations professionally, I consider myself decent at frontend development. I also have non-trivial machine learning
-experience, mostly just implementing off-the-shelf algorithms.
-
-These days, I'm very interested in developments around blockchain, web3, and ethereum.
-
 # Personal
 
 My legal first name is William and middle name is Arthur which is why I use
