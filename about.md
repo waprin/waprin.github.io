@@ -25,14 +25,6 @@ and bernedoodle.
 
 Sometimes you might run into me surfing at Pacifica or Santa Cruz or snowboarding in Tahoe.
 
-# Disclaimer
-
-I am an engineer, not a spokeperson, and not a financial advisor.
-
-Any opinion expressed on this website is strictly my own, and in no way reflects any opinion 
-of any of my employers, current or previous.
-
-No material on this website is financial or investing advice. 
 
 # About This Site
 

@@ -21,10 +21,6 @@ url: https://billprin.com
 # Navigation
 nav:
   - name:           "Home"
-    href:           "/"
-  - name:           "Blog"
-    href:           "/blog"
-  - name:           "About"
     href:           "/about"
 
 # Sass
