@@ -6,14 +6,15 @@ permalink: /about
 
 # Professional
 
-Hi, my name is Bill, and I'm a Software Engineer living in San Francisco.
+Hi, my name is Bill, and I'm an engineer, writer, and entrepeneur living in San Francisco.
 
-I work at Pinterest, focusing on Python infrastructure, tooling, and developer experience.
+Currently, I'm focused on building a goal tracking app called Navigoals ( navigoals.com ). It still a work in progress
+and requires a direct invite - let me know if you're interested!
 
+Most recently, I worked at Pinterest in their Engineering Productivity division in Infrastructure focused on Python language concerns.
 Previously, I worked at many startups including Bastille, Thumbtack, and Knewton. My longest tenure was at Google as both
 a Developer Programs Engineer for Google Cloud and a
-Software Engineer on the Mobile Productivity team focused 
-on data analytics of internal mobile developers.
+Software Engineer on the Mobile Productivity team focused  on data analytics of internal mobile developers.
 
 # Personal
 
@@ -27,12 +28,12 @@ Sometimes you might run into me surfing at Pacifica or Santa Cruz or snowboardin
 
 # Disclaimer
 
-I am an engineer, not a spokeperson, and not a financial advisor.
-
 Any opinion expressed on this website is strictly my own, and in no way reflects any opinion 
 of any of my employers, current or previous.
 
 No material on this website is financial or investing advice. 
+
+I have no formal medical education. No material on this site is medical advice.
 
 # About This Site
 

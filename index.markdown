@@ -16,13 +16,5 @@ permalink: /
         </div>
     {% endif %}
     {% endfor %}
-    <h2>External Posts</h2>
-    {% for post in site.posts %}
-        {% if post.external_url %}
-        <div class="post-list">
-            <a class="post-title" href="{{ post.external_url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_long_string: "ordinal", "US" }}</time>
-        </div>
-        {% endif %}
-    {% endfor %}
+  
 </div>
