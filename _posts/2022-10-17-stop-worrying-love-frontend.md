@@ -120,7 +120,7 @@ It’s true that on average, Indie Hackers make a **lot* less than BigTech SWEs 
 
 More importantly than money, indie hacking is usually a lot more *fun* than IC BigTech or VC startups. But the financial potential is on average lower but potentially much higher.
 
-Even if you want to do a VC-backed startup, you’re *still* often better off doing frontend. The biggest crypto YC successs stories are Coinbase and OpenSea and both their MVPs involved a lot more frontend work than backend work. I was recently at a San Francisco crypto meetup and spoke with the founders of the Solana Phantom wallet, which raised $100M at a $1B valuation, and their CEO told me he coded most of the product but never wrote a single smart contract in Rust, the programming language for Solana. He simply didn’t need to, an didn’t want to distract himself, cause his core product was the Chrome extension , written in Javascript.
+Even if you want to do a VC-backed startup, you’re *still* often better off doing frontend. The biggest crypto YC successs stories are Coinbase and OpenSea and both their MVPs involved a lot more frontend work than backend work. I was recently at a San Francisco crypto meetup and spoke with the founders of the Solana Phantom wallet, which raised $100M at a $1B valuation, and their CEO told me he coded most of the product but never wrote a single smart contract in Rust, the programming language for Solana. He simply didn’t need to, and didn’t want to distract himself, cause his core product was the Chrome extension , written in Javascript.
 
 ## Conclusion
 
