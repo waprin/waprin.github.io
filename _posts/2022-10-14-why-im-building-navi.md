@@ -6,7 +6,7 @@ categories: entrepeneurship
 tags: [entrepreneurship, productivity, indiehacking]
 ---
 
-I recently a very lucrative job as a  Silicon Valley senior software engineer so I could focus my efforts full-time on a side-project that’s very near and dear to my heart - [Navigoals](https://navigoals.com). In the coming months, I plan to spend a lot of time continuing to build the product and also blogging about related topics such as productivity, mental health, mindfulness, and self-care.
+I recently left a very lucrative job as a  Silicon Valley senior software engineer so I could focus my efforts full-time on a side-project that’s very near and dear to my heart - [Navigoals](https://navigoals.com). In the coming months, I plan to spend a lot of time continuing to build the product and also blogging about related topics such as productivity, mental health, mindfulness, and self-care.
 
 I wanted a first blog post to anchor my thoughts and motivations as to why Navigoals is such a special and important project to me. I need “one blog post to rule them all” that will establish my root motivation for all the work that will follow. At first glance, Navigoals might seem like just another habit tracker, and in some sense it is. But I also believe it’s a lot more than that, and I believe that in time, I can show that to others as well.
 
