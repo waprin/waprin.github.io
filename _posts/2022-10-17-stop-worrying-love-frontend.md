@@ -96,7 +96,7 @@ Even if you *are a* world class deep learning researcher, even they know the ben
 
 ## What it means to be world class
 
-On average, though, you the reader, are not a world class deep learning researcher. Maybe you know some deep learning and you’re good at it, but you’re not world class. How do people become world class at something? But how do you become world class at something? Certainly there’s a combination of talent, hard work, and opportunity. Many would argue hard work is the most important part of the formula. 
+On average, though, you the reader, are not a world class deep learning researcher. Maybe you know some deep learning and you’re good at it, but you’re not world class. How do people become world class at something? Certainly there’s a combination of talent, hard work, and opportunity. Many would argue hard work is the most important part of the formula. 
 
 It’s possible to work hard on something you’re not particularly motivated to do, but it’s so much easier to just work hard on something that you actually want to do. Throughout my career, I had a huge hint that what I really wanted to do was frontend dev. The hint was, *all my side projects were frontend project*.
 
