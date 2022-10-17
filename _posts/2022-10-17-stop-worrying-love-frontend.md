@@ -25,7 +25,7 @@ _Do what you want to do_ sounds like obvious advice, but it’s not when the wor
 
 It’s no surprise I had those thoughts. They were reinforced at almost all my jobs. 
 
-At one my second job out of college, I was at startup where my primary role was to write C++ for low-latency scrapers. Meanwhile, my coworker was building a frontend in this brand new technology called NodeJS. Javascript, on the server? I was intrigued. I asked my management if I could spend a little time helping my coworker with the NodeJS project, which they gracefully agreed to. This experience ended up saving the company during Hurricane Sandy . (footnote 1)
+At my second job out of college, I was at startup where my primary role was to write C++ for low-latency scrapers. Meanwhile, my coworker was building a frontend in this brand new technology called NodeJS. Javascript, on the server? I was intrigued. I asked my management if I could spend a little time helping my coworker with the NodeJS project, which they gracefully agreed to. This experience ended up saving the company during Hurricane Sandy . (footnote 1)
 
 But at my next company during the interview, I remember telling this story and being told, that by the interviewer that by asking to work on a frontend project, I was “asking for a demotion”. 
 
