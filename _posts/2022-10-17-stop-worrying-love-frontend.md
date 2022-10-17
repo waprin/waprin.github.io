@@ -98,7 +98,7 @@ Even if you *are a* world class deep learning researcher, even they know the ben
 
 On average, though, you the reader, are not a world class deep learning researcher. Maybe you know some deep learning and you’re good at it, but you’re not world class. How do people become world class at something? Certainly there’s a combination of talent, hard work, and opportunity. Many would argue hard work is the most important part of the formula. 
 
-It’s possible to work hard on something you’re not particularly motivated to do, but it’s so much easier to just work hard on something that you actually want to do. Throughout my career, I had a huge hint that what I really wanted to do was frontend dev. The hint was, *all my side projects were frontend project*.
+It’s possible to work hard on something you’re not particularly motivated to do, but it’s so much easier to just work hard on something that you actually want to do. Throughout my career, I had a huge hint that what I really wanted to do was frontend dev. The hint was, *all my side projects were frontend projects*.
 
 Even though I insisted on getting a C++ job out of school, I synced up with someone who was still an undergrad to make a website that filled in some of Facebook’s college-focused features they had removed between 2004 and 2009 as they broadened to a wider audience (e.g. sharing resources and review for a specific class). In 2014 I took a break from my job and learned Django so I could make an analytics app for my fantasy football team. In 2020, my friends and I got excited to work on app that listed all the music livestreams for DJs so we could host Zoom dance parties for them.
 
