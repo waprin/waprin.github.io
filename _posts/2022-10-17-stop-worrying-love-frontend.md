@@ -130,4 +130,4 @@ If low-level C++ and Rust makes you happy, do that. If cool machine learning wit
 
 But if you want to do frontend, do frontend. And if a backend elitist ever condescends to you about it, dismiss their foolish opinion and laugh internally at their ignorance. Because doing frontend can expose you to lots of cool computer science concepts, it can make you lots of money, it lets you build products that you can share with anyone. Most importantly, it can even make you happy.
 
-1) How my exposure to frontend saved the startup. During Hurricane Sandy, there was a major AWS outage. I was also the only engineer the company with power. I had to rebuild our entire infrastructure by myself, which I was only able to do because my manager let his C++ engineer mess around with the frontend stack for a couple month
+1) How my exposure to frontend saved the startup. During Hurricane Sandy, there was a major AWS outage. I was also the only engineer the company with power. I had to rebuild our entire infrastructure by myself, which I was only able to do because my (wise) manager let his C++ engineer mess around with the frontend stack for a couple months
