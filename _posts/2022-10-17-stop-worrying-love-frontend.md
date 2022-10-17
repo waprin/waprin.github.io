@@ -21,7 +21,7 @@ Because I enjoy writing long form blog posts and will go on a few tangents, I al
 - You can enjoy learning about low level programming languages like, C, C++, and Rust, low level Linux concepts, compilers, machine learning, etc, as well as computer science topics like graphs and algorithms, and you can be relatively good at all these things, and *still* focus your career more on frontend dev *if thats what you want to do*.
 - And of course, focus on Rust , C++, Haskell or x86 *if thats what you want to do*
 
-_Do what you want to do_ sounds like obvious advice, but it’s not when the world keeps hinting that you’re silly for wanting to do that. I had thoughts that frontend was somehow not how the best of use my time if I happened to also think low level programming and computer science was also fun. 
+_Do what you want to do_ sounds like obvious advice, but it’s not when the world keeps hinting that you’re silly for wanting to do that. I had thoughts that frontend was somehow not how the best of use my time if I happened to also think low level programming and computer science were also fun. 
 
 It’s no surprise I had those thoughts. They were reinforced at almost all my jobs. 
 
