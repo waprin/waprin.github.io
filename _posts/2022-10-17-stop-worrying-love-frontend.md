@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Stop Worrying And Love Frontend Dev
+title: How I Learned to Stop Worrying And Love Frontend Dev
 description: "comparing frontend vs backend career options"
 categories: programming
 tags: [programming, frontend]
