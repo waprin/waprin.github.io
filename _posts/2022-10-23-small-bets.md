@@ -13,6 +13,7 @@ In terms of some big takeaways, Daniel has some very unorthodox advice:
 * **Don't focus on one project** - This is pretty controversial to many. VC-oriented incubators like YCombinator strongly emphasize the importance of focus. Most bootstrapper advice will similarly emphasize focus.
 * **Don't validate** - Likewise, this is controversial. Advice around bootstrapping / self-funding particularly emphasizes the importance of validation. Some, like Microconf founder Rob Walling, suggest extensive validation before you write a single line of code.
 * **Spend a lot of time scrolling places like Twitter** (or another "idea generator") - This ties into the importance of focus. Most entrepreneurial advice emphasizes ruthlessly avoiding distraction, of which any sort of social media would be a prime example.
+
 Most people who've spent a lot of time consuming entrepreneurship content from YCombinator, Microconf, VCs like a16z, and even Indie Hackers will negatively react to the above three points.
 
 Daniel manages to make solid arguments for all three points, based on his hard-won experience surviving in the self-employed world after leaving Amazon.
@@ -63,12 +64,11 @@ For example, one of my friends can't code, and can't design, but always ideates 
 **This gave me the idea for a startup idea generator - work on whatever people ask you for advice about.**
 
 I'm a bad artist. I'm a bad visual designer. I'm a terrible singer.. I'm not bad at socializing, but I am bad at needing to be the charismatic guy who carries the room with his energy.
-I'm good at programming. I'm an above-average writer and above-average data analyst. And I'm ok with risk, with taking some Ls on the road to some Ws. That third skill will be a key one if I'm to have any hope of succeeding at self-employment. And the rest of the skills should be one of the key
-criterion I use when deciding which projects to pick.
+I'm good at programming. I'm an above-average writer and above-average data analyst. And I'm ok with risk and taking some Ls on the road to some Ws. That third skill will be a key one if I'm to have any hope of succeeding at self-employment. And the rest of the skills should be key criteria I use when deciding which projects to pick.
 
 ## How my path has changed
 
-So what's next for me? I recently announced that I wanted to spend a lot of time in the coming months working on [Navigoals](https://navigoals.com). The truth is, I love my goal tracker. I use it all day, every day. It helps motivate me to code and write to see my grey boxes turn green and avoid my grey boxes turning red.
+So what's next for me? I recently announced that I wanted to spend a lot of time in the coming months working on [Navigoals](https://navigoals.com). The truth is, I love my goal tracker. I use it all day, every day. It helps motivate me to code and write when I see my grey boxes turn green and avoid my grey boxes turning red.
 But I also realize going "all-in" on a B2C app is simply too risky for my goals. The product space also requires too much emphasis on visual design to appeal to consumers, which is not my strength. So while I can write about mental health and productivity to accomplish some growth, I doubt it will take the project far enough to generate significant income. 
 
 Part of the appeal of self-employment to me is that I'm bursting with ideas. Tying myself to one project sounded boring anyway and counter-productive to my goals. So, being told to do multiple projects is a relief.
