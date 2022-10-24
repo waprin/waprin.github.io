@@ -4,9 +4,6 @@
 		<a href="{{ site.url }}"><img src="{{site.author.picture}}" class="profile-image"></a>
 		<div class="profile-about">
 			<h2 style="margin-bottom: 0; font-weight: 700;">{{site.author.name}}</h2>
-			{% if site.author.facebook %}
-				<a href="https://facebook.com/{{site.author.facebook}}" target="_blank"><img src="assets/images/icon/facebook.svg" class="social-icon"></a>
-			{% endif %}
 			{% if site.author.twitter %}
 				<a href="https://twitter.com/{{site.author.twitter}}" target="_blank"><img src="assets/images/icon/twitter.svg" class="social-icon"></a>
 			{% endif %}
@@ -28,7 +25,16 @@
 			{% if site.author.medium %}
 				<a href="https://medium.com/@{{site.author.medium}}" target="_blank"><img src="assets/images/icon/medium.png" class="social-icon"></a>	
 			{% endif %}
+		
+			{% if site.author.indiehackers %}
+			<a href="https://www.indiehackers.com/waprin" target="_blank"><img src="assets/images/icon/indie_hackers.png" class="social-icon"></a>	
+			{% endif %}
+			<br />
+			<a href="/">Home</a>
 			<a href="about">About Me</a>
+			<a href="blog">Blog</a>
+			<a href="projects">Projects</a>
+
 			<br>
 			<div class="mode" id="mode-switcher" onclick="toggleNightMode();">
 				<span></span>
@@ -39,3 +45,12 @@
 	
 </div>
 {% include footer.html %}
+
+<!--
+{% if site.author.hackernews %}
+<a href="https://news.ycombinator.com/user?id{{site.author.hackernews}}" target="_blank"><img src="assets/images/icon/yclogo.png" class="social-icon"></a>	
+{% endif %}
+{% if site.author.reddit %}
+<a href="https://reddit.com//user/{{site.author.hackernews}}" target="_blank"><img src="assets/images/icon/reddit_logo.jpeg" class="social-icon"></a>	
+{% endif %}
+-->
