@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My Key Takeaways From the Smallbets Class
-description: "lesson from daniel vassallo's small bet class"
+title: My Key Takeaways From the Portfolio of Small Bets Class
+description: "lesson from daniel vassallo's smallbets  class"
 categories: business
 tags: [business, bootstrapping]
 ---
