@@ -8,8 +8,12 @@ permalink: /about
 
 Hi, my name is Bill, and I'm an engineer, writer, and entrepeneur living in San Francisco.
 
-Currently, I'm focused on building a goal tracking app called Navigoals ( navigoals.com ). It still a work in progress
-and requires a direct invite - let me know if you're interested!
+Currently, I'm focused on building an advanced goal tracking app called [Navigoals]( navigoals.com). It still a work in progress - so be forgiving , especially 
+for my visual design skills.
+
+I'm also blogging and exploring other ["small bets"](https://billprin.com/2022/10/23/small-bets.html).
+
+Most of my professional work was doing backend development, mostly in C++, Java, and Python. [My side projecs have tended towards the frontend though](https://billprin.com/2022/10/17/stop-worrying-love-frontend.html), and these days I'm focusing more on that to launch various SaaS ideas.  So I'm currently mostly focused on Typescript and Swift for web and iOS respectively. 
 
 Most recently, I worked at Pinterest in their Engineering Productivity division in Infrastructure focused on Python language concerns.
 Previously, I worked at many startups including Bastille, Thumbtack, and Knewton. My longest tenure was at Google as both
