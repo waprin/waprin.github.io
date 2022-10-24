@@ -14,6 +14,9 @@ layout: default
 	<h1>{{page.title}}</h1>
 	{{ content }}
 </div>
+<div>
+	You can find me on Twitter <a href="https://twitter.com/bill_prin">@bill_prin</a>
+</div>
  <div class="tags-container">
 	{% for tag in page.tags %}
 		<a href="{{ site.url }}/tags/#{{tag | cgi_escape}}" class="post-tag">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
@@ -26,4 +29,3 @@ layout: default
 	<a class="next" href="{{ page.next | relative_url }}">{{ page.next.title }} ></a>
 {% endif %}
 </div>
-{% include disqus.html %}
