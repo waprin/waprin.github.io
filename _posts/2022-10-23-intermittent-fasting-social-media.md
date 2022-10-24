@@ -10,7 +10,7 @@ tags: [productivity, mentalhealth]
 
 My favorite episode I’ve listened to so far is episode [#39, *Controlling Your Dopamine For Motivation, Focus & Satisfaction.*](https://www.youtube.com/watch?v=QmOF0crdyRU) There are several important topics that he discusses in this episode. Two, in particular, are the effects of intermittent fasting on focus and the impact of too much dopamine release on your baseline dopamine for subsequent activity.
 
-Huberman suggests a lot of lifestyle techniques improve motivation. I’ve synethesized some of these techniques into one that's very easy to wrap your head around - 12-8 intermittent fasting for food *and* for social media.
+Huberman suggests a lot of lifestyle techniques improve motivation. I’ve synthesized some of these techniques into one that's very easy to wrap your head around - 12-8 intermittent fasting for food *and* for social media.
 
 **In other words, only eat or use social media between 12 PM-8 PM.** 
 
