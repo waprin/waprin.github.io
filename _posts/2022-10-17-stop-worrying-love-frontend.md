@@ -8,9 +8,9 @@ tags: [programming, frontend]
 
 This blog post is intended for a specific type of software engineer. It’s a type of engineer that I used to be. An engineer who’s been brainwashed into thinking frontend development is somehow “inferior” to backend dev.
 
-In the past I’ve had thoughts like: 
+In the past, I’ve had thoughts like: 
 
-- Frontend is cool, but real computer science and engineering lives in the backend
+- Frontend is cool, but real computer science and engineering lives in the backend.
 - Frontend is cool, but the work is too commoditized by cheap offshore contractors and “bootcampers”
 - Frontend is cool, but the big and new opportunities are in more cutting-edge spaces like machine learning / AI , distributed systems, and blockchain
 
@@ -25,11 +25,11 @@ _Do what you want to do_ sounds like obvious advice, but it’s not when the wor
 
 It’s no surprise I had those thoughts. They were reinforced at almost all my jobs. 
 
-At my second job out of college, I was at startup where my primary role was to write C++ for low-latency scrapers. Meanwhile, my coworker was building a frontend in this brand new technology called NodeJS. Javascript, on the server? I was intrigued. I asked my management if I could spend a little time helping my coworker with the NodeJS project, which they gracefully agreed to. This experience ended up saving the company during Hurricane Sandy . (footnote 1)
+At my second job out of college, I was at a startup where my primary role was to write C++ for low-latency scrapers. Meanwhile, my coworker was building a frontend in this brand new technology called NodeJS. Javascript, on the server? I was intrigued. I asked my management if I could spend a little time helping my coworker with the NodeJS project, which they gracefully agreed to. This experience ended up saving the company during Hurricane Sandy . (footnote 1)
 
 But at my next company during the interview, I remember telling this story and being told, that by the interviewer that by asking to work on a frontend project, I was “asking for a demotion”. 
 
-The idea that frontend dev is “lower” than backend dev is an attitude that was frequently reinforced at Google. During orientation I was told by the instructor, Google has 4 main languages: “C++ because we hire real engineers, Java because we hire a lot of college students, Python for little scripts, and Go because we hired Rob Pike. Oh, and Javascript for the frontend devs”. In this instructor’s view, only C++ work deserved the badge of “real” engineering.
+The idea that frontend dev is “lower” than backend dev is an attitude that was frequently reinforced at Google. During orientation, I was told by the instructor, Google has 4 main languages: “C++ because we hire real engineers, Java because we hire a lot of college students, Python for little scripts, and Go because we hired Rob Pike. Oh, and Javascript for the frontend devs”. In this instructor’s view, only C++ work deserved the badge of “real” engineering.
 
 I’m not saying *everyone* insists that the more low level your programming language is, the more you’re a “real” engineer. But I do think if you spend time in the engineering side of the tech industry, you’ll encounter this concept. Even though it’s a really dumb and completely incorrect concept.
 
@@ -100,8 +100,6 @@ On average, though, you the reader, are not a world class deep learning research
 
 It’s possible to work hard on something you’re not particularly motivated to do, but it’s so much easier to just work hard on something that you actually want to do. Throughout my career, I had a huge hint that what I really wanted to do was frontend dev. The hint was, *all my side projects were frontend projects*.
 
-Even though I insisted on getting a C++ job out of school, I synced up with someone who was still an undergrad to make a website that filled in some of Facebook’s college-focused features they had removed between 2004 and 2009 as they broadened to a wider audience (e.g. sharing resources and review for a specific class). In 2014 I took a break from my job and learned Django so I could make an analytics app for my fantasy football team. In 2020, my friends and I got excited to work on app that listed all the music livestreams for DJs so we could host Zoom dance parties for them.
-
 During the day job at my career, I’ve only dabbled in frontend when the opportunities have come up. At a few points I’ve tried to nudge myself closer, but I’ve equally nudged myself away when I decided once again that "real" engineers should focus on distributed systems or "real" engineer should focus on machine learning.
 
 These days, I’m happy to be focusing on frontend, both web and mobile. The developer experience for Typescript with NextJS, Firebase, and TailwindCSS is just so ***fun***. And Swift is currently my favorite language and SwiftUI with XCode is equally a blast. Infinitely more fun than any developer experience I’ve had on the backend. Good developer experience makes me happy and productive. And you're not going to do world class work unless you're happy
@@ -116,17 +114,17 @@ and productive.
 
 But if you scroll through Indie Hackers, you’ll notice that pretty much every single opportunity is frontend focused. There’s exception, especially if you can look for ways to sell stuff *about* backend rather than backend itself, such as books or courses on AWS. But on the whole, if you want to do indie hacking stuff, you’re far, far better off knowing Javascript than C++.
 
-It’s true that on average, Indie Hackers make a **lot* less than BigTech SWEs do. A *lot* less. Senior at BigTech is usually 400k, Staff is 600k, even startups can usually get you to 200k base. Indie hackers often celebrate 20k for the entire year, which would be a small signing bonus to BigTech SWEs. The catch is that indie hackers have way more upside. By owning their own businesses, if they ever do find a breakout success, they can make tens or hundreds of millions of dollars. Silicon Valley likes to give engineers the illusion of that possibility , but it’s almost always an illusion, except for a rare few who win the startup lottery (and even then, VCs have extracted most of the value out of ISOs and most IC engineers get too small a percentage to matter).
+It’s true that on average, Indie Hackers make a **lot* less than BigTech SWEs do. A *lot* less.The catch is that indie hackers have way more upside. By owning their own businesses, if they ever do find a breakout success, they can make tens or hundreds of millions of dollars. Silicon Valley likes to give engineers the illusion of that possibility , but it’s almost always an illusion, except for a rare few who win the startup lottery (and even then, VCs have extracted most of the value out of ISOs and most IC engineers get too small a percentage to matter).
 
-More importantly than money, indie hacking is usually a lot more *fun* than IC BigTech or VC startups. But the financial potential is on average lower but potentially much higher.
-
-Even if you want to do a VC-backed startup, you’re *still* often better off doing frontend. The biggest crypto YC successs stories are Coinbase and OpenSea and both their MVPs involved a lot more frontend work than backend work. I was recently at a San Francisco crypto meetup and spoke with the founders of the Solana Phantom wallet, which raised $100M at a $1B valuation, and their CEO told me he coded most of the product but never wrote a single smart contract in Rust, the programming language for Solana. He simply didn’t need to, and didn’t want to distract himself, cause his core product was the Chrome extension , written in Javascript.
+Even if you want to found a VC-backed startup, you’re *still* often better off doing frontend. The biggest crypto YC successs stories are Coinbase and OpenSea and both their MVPs involved a lot more frontend work than backend work. I was recently at a San Francisco crypto meetup and spoke with the founders of the Solana Phantom wallet, which raised $100M at a $1B valuation, and their CEO told me he coded most of the product but never wrote a single smart contract in Rust, the programming language for Solana. He simply didn’t need to, and didn’t want to distract himself, cause his core product was the Chrome extension , written in Javascript.
 
 ## Conclusion
 
-Before my grandmother died, often times she would reply to pretty much any conversation with *“do what makes you happy”*, which she said in a voice that was a funny combination of an old Brooklyn accent and her aging vocal cords. Nowadays, when my family discusses any scenario where someone solicits any sort of advice, usually someone imitates the grandma voice and says “*do what makes you happy”*.
+Before my grandmother died, oftentimes she would reply to pretty much any conversation with *“do what makes you happy”*, which she said in a voice that was a funny combination of an old Brooklyn accent and her aging vocal cords. Nowadays, when my family discusses any scenario where someone solicits any sort of advice, usually someone imitates the grandma voice and says “*do what makes you happy”*.
 
 If low-level C++ and Rust makes you happy, do that. If cool machine learning with PyTorch and numpy makes you happy, do that. If hardware and robotics and embedded programming makes you happy, do that.
+
+I myself still find those topics pretty cool, and perhaps I'll return to one of those when the time is right.
 
 But if you want to do frontend, do frontend. And if a backend elitist ever condescends to you about it, dismiss their foolish opinion and laugh internally at their ignorance. Because doing frontend can expose you to lots of cool computer science concepts, it can make you lots of money, it lets you build products that you can share with anyone. Most importantly, it can even make you happy.
 
