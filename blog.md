@@ -6,6 +6,7 @@ permalink: /blog
 <div class="post-container">
 	{% for post in site.posts %}
         {% if post.external_url %}
+        {% elsif post.tags contains "skip" %}
         {% else %}
         <div class="post-list">
             <a class="post-title" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
