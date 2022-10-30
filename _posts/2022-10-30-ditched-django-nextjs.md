@@ -11,7 +11,7 @@ This post is about why I stopped using the web framework Django in favor of Next
 
 The summary is that using a language like Python or Ruby for a significant web project has increasingly gotten less reasonable over time to the point where now, in 2022, it’s getting hard to justify. By not keeping your web stack in pure Javascript, you are making your life unnecessarily difficult (as usual, we’ll include languages like Typescript as part of the Javascript ecosystem). You will almost certainly invest a bunch of time-solving problems that would be automatically solved for you if you just stuck with Javascript. 
 
-I will provide specific examples of solving problems using Django that would have been trivially solved in NexJS.
+I will provide specific examples of solving problems using Django that would have been trivially solved in NextJS.
 
 I can only think of two valid reasons to use Python or Ruby for the web in 2022:
 
