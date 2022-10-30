@@ -31,13 +31,13 @@ The issue is that I ran into several problems:
 - At first, I thought I didn’t need fancy frameworks like React, and it’s better to use something simple, which was [ZeptoJS](https://zeptojs.com/) (a more perfomant jQuery clone). But even the “simple” features our website needed like an infinite scroll of music livestreams started turning into spaghetti code. I wanted to move to React to achieve a more declarative approach but getting Django and React to play nicely together was non-trivial. NextJS makes it trivial to start a new React project, and even brings me back to the PHP days of mapping the filename to a single page
 - My webpage loaded a bunch of images and rendered them in a gallery which was very slow. I wanted to only load the image when the user scrolled to see it. To accomplish this, I had to use the [Intersection API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), which was fun, but [NextJS Image](https://nextjs.org/docs/api-reference/next/image) component does this out of the box.
 - Because I wanted infinite scroll to make the website more modern, I had to render the grid components as they scrolled. It would have been better to do this server-side since it would be faster, but it also needed to be done client-side after the timezone was updated. (see my post on
-[How to How to show local timezones on a webpage without asking the user for their location
+[How to show local timezones on a webpage without asking the user for their location
 ](http://billprin.com/2020/05/12/local-timezones.html))
 - Furthermore, I  wanted the first page load to be very quick and contain content so the SEO would be faster. Some of the content could be rendered ahead of statically. But again, I had to rewrite the same code in Python and in Javascript
 
 So one of my biggest problem was wanting to render the same component, but some times statically ahead of time, sometimes dynamically on the server (for user specific cases), and sometimes on the client (to re-render any timezone updates). 
 
-Being able to easily render components statically, server-side, or client-side is one of the fundamental features of NextJS. This is addition to a ton of commonly used frontend optimizations like Image viewport rendering that Django simply does not offer. Django is not really “batteries included” anymore now that the batteries have changed.
+Being able to easily render components statically, server-side, or client-side is one of the fundamental features of NextJS. This is in addition to a ton of commonly used frontend optimizations like Image viewport rendering that Django simply does not offer. Django is not really “batteries included” anymore now that the batteries have changed.
 
 Besides these features, there’s a few other good reasons to stick with Javascript. For one, every web project uses it so almost all of the good tooling for other things you need such as CSS preprocessing will be Javascript-centric. You will inevitably need NodeJS in your project , and if you have two languages, now you need to worry about tooling for both (e.g. dependency upgrades).
 

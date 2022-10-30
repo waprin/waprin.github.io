@@ -19,9 +19,7 @@ Currently, I'm focused on building an advanced goal tracking app called [Navigoa
 
 I also have a few "micro-SaaS"  products queued up in the spirit of ["small bets"](https://billprin.com/2022/10/23/small-bets.html) - stay tuned! 
 
-You can read more about this on the [projects page]/(/projects)
-
-
+You can read more about this on the [projects page](/projects)
 
 
 ## Past professional experience
