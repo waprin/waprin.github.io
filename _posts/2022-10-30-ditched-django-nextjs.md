@@ -29,7 +29,7 @@ So I was not eager to get rid of Python, if anything my career has me tagged as 
 The issue is that I ran into several problems:
 
 - At first, I thought I didn’t need fancy frameworks like React, and it’s better to use something simple, which was [ZeptoJS](https://zeptojs.com/) (a more perfomant jQuery clone). But even the “simple” features our website needed like an infinite scroll of music livestreams started turning into spaghetti code. I wanted to move to React to achieve a more declarative approach but getting Django and React to play nicely together was non-trivial. NextJS makes it trivial to start a new React project, and even brings me back to the PHP days of mapping the filename to a single page
-- My webpage loaded a bunch of images and rendered them in a gallery which was very slow. I wanted to only load the image when the user scrolled to see it. To accomplish this, I had to use the Intersection API, which was fun, but NextJS Image component does this out of the box.
+- My webpage loaded a bunch of images and rendered them in a gallery which was very slow. I wanted to only load the image when the user scrolled to see it. To accomplish this, I had to use the [Intersection API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), which was fun, but [NextJS Image](https://nextjs.org/docs/api-reference/next/image) component does this out of the box.
 - Because I wanted infinite scroll to make the website more modern, I had to render the grid components as they scrolled. It would have been better to do this server-side since it would be faster, but it also needed to be done client-side after the timezone was updated. (see my post on
 [How to How to show local timezones on a webpage without asking the user for their location
 ](http://billprin.com/2020/05/12/local-timezones.html))
@@ -45,4 +45,4 @@ When NodeJS first came out, Python still felt a lot more usable in many ways. No
 
 Python is still an amazing language and it’s still probably the best “jack-of-all trades” language there is. It might make sense to use something like Django Rest Framework if you plan to do a significant amount of machine learning and want to use one language to write all your models. Of course, I’m very indebted to all the amazing OSS contributions made by the Python and Django communities.
 
-But going forward, Django is something I will look back fondly on rather than use for any projects.  So going forward, aside from quick experiments for learning purposes, I plan to stick entirely within the Javascript ecosystem for web projects.
+But going forward, Django is something I will look back fondly on rather than use for any projects.  Going forward, aside from quick experiments for learning purposes, I plan to stick entirely within the Javascript ecosystem for web projects.
