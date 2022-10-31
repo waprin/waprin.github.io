@@ -41,7 +41,7 @@ Being able to easily render components statically, server-side, or client-side i
 
 Besides these features, there’s a few other good reasons to stick with Javascript. For one, every web project uses it so almost all of the good tooling for other things you need such as CSS preprocessing will be Javascript-centric. You will inevitably need NodeJS in your project , and if you have two languages, now you need to worry about tooling for both (e.g. dependency upgrades).
 
-When NodeJS first came out, Python still felt a lot more usable in many ways. NodeJS would easily turn into callback hell. But in 2022, it’s Python that feels is cobbled by an awkward async story, while NodeJS async/await feels much simpler. Typescript also feels more fleshed out than Python typing and the tooling around it again feels easier to understand.
+When NodeJS first came out, Python still felt a lot more usable in many ways. NodeJS would easily turn into callback hell. But in 2022, it’s Python that feels hobbled by an awkward async story, while NodeJS async/await feels much simpler. Typescript also feels more fleshed out than Python typing and the tooling around it feels easier to understand.
 
 Python is still an amazing language and it’s still probably the best “jack-of-all trades” language there is. It might make sense to use something like Django Rest Framework if you plan to do a significant amount of machine learning and want to use one language to write all your models. Of course, I’m very indebted to all the amazing OSS contributions made by the Python and Django communities.
 
