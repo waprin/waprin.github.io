@@ -12,9 +12,7 @@ permalink: /projects
 
 # Projects
 
-# Navigoals (active)
-
-Link: [Navigoals](https://www.navigoals.com)
+# Navigoals (coming soon)
 
 This is an advanced goal, habit, and time tracker for people who want to track everything aka "the quantified self". It makes it easy to roll up habits into a tree (really, a directed acyclic graph) to
 have a more nuanced view of how you spend your time. I use it to set high level goals like "be productive",
@@ -25,7 +23,6 @@ track that I used MyFitnessPal in Navigoals. I use Notion for daily planning, bu
 the planning and reviewed the plan at the end of the night in Navigoals. I find this really helpful
 for staying on top of balancing taking care of myself with making forward progress on my goals.
 
-I wrote about more of my motivation in [this post](https://billprin.com/2022/10/14/why-im-building-navi.html).
 
 # All Day I Stream (defunct) 
 
