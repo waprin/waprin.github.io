@@ -23,6 +23,7 @@ track that I used MyFitnessPal in Navigoals. I use Notion for daily planning, bu
 the planning and reviewed the plan at the end of the night in Navigoals. I find this really helpful
 for staying on top of balancing taking care of myself with making forward progress on my goals.
 
+Currently signups are closed but you can add yourself to the waiting list on the landing page - [Navigoals.com](https://navigoals.com).
 
 # All Day I Stream (defunct) 
 
