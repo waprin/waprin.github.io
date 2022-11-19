@@ -7,6 +7,10 @@ categories: programming
 tags: [programming, webdev, javascript, python]
 ---
 
+
+<img height="100" width="300" src=
+"{{ site.url }}/assets/djangotonext.png" />
+
 This post is about why I stopped using the web framework Django in favor of NextJS. More broadly, it’s about why I would entirely avoid Python web frameworks, such as Flask, if you plan to serve up any HTML. While I’ve only dabbled in the Ruby community, I imagine most of my points will also apply to frameworks like Rails.
 
 The summary is that using a language like Python or Ruby for a significant web project has increasingly gotten less reasonable over time to the point where now, in 2022, it’s getting hard to justify. By not keeping your web stack in pure Javascript, you are making your life unnecessarily difficult (as usual, we’ll include languages like Typescript as part of the Javascript ecosystem). You will almost certainly invest a bunch of time-solving problems that would be automatically solved for you if you just stuck with Javascript. 
