@@ -42,7 +42,7 @@ In an attempt to encourage me, one fellow “indie hacker” told me about a fri
 - Simplicity and feature set minimalism
 - Strong visual design and craftsmanship
 
-For better or worse, I plan to focus on neither of these priorities, and in some ways I’ll do the opposite. It’s very possible I find out the hard way that I should have listened. I also fully understand why this advice is important. 
+For better or worse, I plan to focus on neither of these priorities. It’s very possible I find out the hard way that I should have listened. I also fully understand why this advice is important. 
 
 Simplicity helps with both the ability for a builder to actually ship a high quality product by reducing the amount of time spent, and makes it easier for the user how to learn the app. I’ve personally seen “feature creep” set back many ambitious projects at full time jobs I’ve worked at. 
 
@@ -61,7 +61,7 @@ As far as visual design, this is an area that’s important but it’s simply no
 
 ## I’m the right person to build it
 
-If you haven’t guessedthis is a topic that I’m extremely passionate about. And what you’ve seen so far is only the tip of the iceberg. 
+If you haven’t guessed this is a topic that I’m extremely passionate about. And what you’ve seen so far is only the tip of the iceberg. 
 
 I also have been coding apps since I was a child. I got a degree in Computer Science and have programmer for money for over 15 years. I’ve done so at tiny startups and at top tech companies. The goal tracker I’m building is not about feature minimalism - it will actually involve coding up some fairly complex logic, synchronized across many devices, with some extensive data architecture challenges. Even if a designer with ok coding skills can make a prettier habit tracker app than me, I doubt they can make one as powerful as what I’m building with Navigoals (without the thousands of hours of software engineering and architecture experience that I have).
 
