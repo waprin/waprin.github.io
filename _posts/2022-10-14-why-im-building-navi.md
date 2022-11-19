@@ -48,7 +48,7 @@ Simplicity helps with both the ability for a builder to actually ship a high qua
 
 Visual design is the first thing users see when they decide whether or not to use your product. Humans are visual creatures and good design makes them feel good and want to use your product more. So often, the better looking product beats the superior product on the market.
 
-Given these strong arguments for these priorities, why am I suggesting I’ll deprioritize them anyway? The basic answer is that everything is a tradeoff, and while I value simplicity, minimalism, and visual design, with Navigoals, there’s other tradeoffs I’d rather pursue. 
+Given these strong arguments for these priorities, why am I suggesting they're not my top priority? The basic answer is that everything is a tradeoff, and while I value simplicity, minimalism, and visual design, with Navigoals, there’s other tradeoffs I’d rather pursue. 
 
 Instead of feature minimalism, I want to build out a feature set that maximizes my odds of improving my life. If I have to learn some extra features to do that, I want to. As Einstein said, “everything should be as simple as possible, but no simpler”.
 
@@ -57,7 +57,7 @@ The “keep things as simple as possible” ideology could be taken to extreme c
 I simply believe there’s a lot more that can be done with habit trackers and goal trackers than the basics. Many people want something simple, others are ok 
 with a learning curve to unlock something powerful. Adobe Photoshop is not simple but many prefer it to MS Paint. Many helpful features in a habit tracker require complexity which is why I'm ok with complex features in Navigoals.
 
-As far as visual design, this is an area that’s important to me but it’s simply not my greatest strength. I think I have a good feel for UX design but I’m not a strong visual designer. I’d be interested in help from one, but I’m concerned I’d waste time describing what I want and iterating with the designer, waste time trying to figure out techniques to code up their design, and waste money on a product that’s rapidly iterating and will frequently need re-designs. So while I highly, highly value the talent of a good designer - I probably value it more than the vast majority of engineers do - it’s simply not a priority. With that said, if you’re a talented visual designer looking to sell freelancer services interested in working on Navigoals, please get in touch.
+As far as visual design, this is an area that’s important but it’s simply not my greatest strength. Long term, the visual design will be important, but short term, I want to focus on building the right set of tools to improve my own life instead of prioritizing looks. However, I highly value the talent of a good designer. If you’re a talented designer looking to sell freelancer services interested in working on Navigoals, please get in touch.
 
 ## I’m the right person to build it
 
