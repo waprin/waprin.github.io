@@ -127,7 +127,7 @@ Secondly, there were a lot of complaints about the $20 price point. I think itâ€
 
 Overall, Apple is a risky ecosystem to develop for given that consumers are somewhat cheap with apps, Apple takes 30% plus a $99.99 annual fee, and the App Review process seems fickle, unpredictable, and lacking in reasonable diligence. I have vocally complained to Apple about this process, so Iâ€™m crossing my fingers they improve it.
 
-I also experimented with ChakraUI for my landing page. One advantage of "smallbets" is that you get more practice at skills relevant to any type of product, such as building effective landing pages, and get the opportunity to try different tools that you might want to adopt.
+I also experimented with ChakraUI for my landing page. One advantage of "smallbets", meaning working on lots of different tiny projects, is that you get more practice at skills relevant to any type of product, such as building effective landing pages, and get the opportunity to try different tools that you might want to adopt.
 
 ### Conclusion
 
