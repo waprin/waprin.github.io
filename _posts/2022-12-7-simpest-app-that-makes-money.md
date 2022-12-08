@@ -21,7 +21,7 @@ I succeeded at this goal, but only by a hair - I sold two In-App Purchases for $
 <img height="400" width="400" src=
 "{{ site.url }}/assets/app_sales.png" />
 
-(Apple shows that I have ~$80 in sales rather than ~$40, because I bought the app myself one, as did a family member, when we were testing.)
+(Apple shows that I have ~$80 in sales rather than ~$40, because $40 came from my own test purchases)
 
 While some developers struggle to ideate new concepts, I’m one of those developers with too many ideas. I have a Notion list with hundreds tagged by category. My constraint of wanting to sell the software to a consumer after only a few weeks of work added a simple and helpful filter:
 
