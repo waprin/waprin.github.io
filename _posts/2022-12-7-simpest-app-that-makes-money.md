@@ -84,6 +84,7 @@ And here’s the calendar view from Navigoals:
 <img height="600" width="600" src=
 "{{ site.url }}/assets/sleeve_calendar.png" />
 
+The Navigoals UI clearly needs a ton of visual and UX work! Consider my sharing of screenshots here an exercise in #buildinpublic :) 
 
 As you can see, in November I spent around 24 hours on the app. That’s only time I tracked with focused 25 minute Pomodoro tomatoes. If I just chip away at a small issue for ten minutes, I often don’t track it, so this somewhat underestimates my time.
 
