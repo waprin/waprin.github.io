@@ -113,7 +113,7 @@ Though there was some interesting back-and-forth because many people pointed out
 
 Overall, I expected some controversy and some negativity. This app mainly was an experiment to make money and learn more about making watchOS apps. If it fails, it’s not too big a deal.
 
-However, I did get a few sales. That will motivate me to keep chipping away at improving it since I still have many ideas to improve both the product and the marketing. I want to move to a subscription model so there can be some recurring revenue, so get the lifetime purchase while you still can if you’re interested.
+However, I did get a few sales. That will motivate me to keep chipping away at improving it since I still have many ideas to improve both the product and the marketing. I want to move to a subscription model so there can be some recurring revenue, so if you happen to be intersted in the app, get the lifetime purchase while you still can.
 
 ### Other Lessons Learned
 
@@ -123,7 +123,7 @@ One huge mistake I made was not attaching a logo/watermark to my video demo. If 
 
 While I’m excited about the unexplored potential in watchOS apps, I’ve been frustrated by reviewers who reject me because they don’t understand my app. For example, I’ve been rejected multiple times because they didn’t find IAP content on the iOS, rather than the reviewer taking the time to understand it’s a watchOS app with an iOS control interface.
 
-Secondly, there were a lot of complaints about the $20 price point. I think it’s a pretty fair deal given that it helps people at real-money poker; the iPhone costs $600+, and the Apple Watch $400+, so clearly, the target audience has money. However, people are anchored to low price point in app pricing expectations.
+Secondly, there were a lot of complaints about the $20 price point. I think it’s a pretty fair deal given that it helps people at real-money poker; the iPhone costs $600+, and the Apple Watch $400+, so clearly, the target audience has money. However, people are anchored to low price point in app pricing expectations. I do take that feedback with a little grain-of-salt, both because consumers always complain about price, and because my target audience "gets" that my app has a financial ROI. But still, if anything I felt I underpriced my product so I was a little annoyed that I got so much pricing pushback.
 
 Overall, Apple is a risky ecosystem to develop for given that consumers are somewhat cheap with apps, Apple takes 30% plus a $99.99 annual fee, and the App Review process seems fickle, unpredictable, and lacking in reasonable diligence. I have vocally complained to Apple about this process, so I’m crossing my fingers they improve it.
 
