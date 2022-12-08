@@ -12,6 +12,7 @@ permalink: /projects
 
 # Projects
 
+
 # Navigoals (coming soon)
 
 This is an advanced goal, habit, and time tracker for people who want to track everything aka "the quantified self". It makes it easy to roll up habits into a tree (really, a directed acyclic graph) to
@@ -24,6 +25,18 @@ the planning and reviewed the plan at the end of the night in Navigoals. I find 
 for staying on top of balancing taking care of myself with making forward progress on my goals.
 
 Currently signups are closed but you can add yourself to the waiting list on the landing page - [Navigoals.com](https://navigoals.com).
+
+
+# Ace Up My Sleeve (Apple Watch poker app)
+
+[Ace Up My Sleeve](https://aceupmysleeve.app)
+
+This is an Apple Watch companion app for poker players, specifically providing pre-flop charts without having to pull out your phone. This can be especially useful in spots like
+tournaments where you shoudl start going "all-in" with certain hands, and the Nash equilbrium can be calculated with computer simulations.
+
+It currently costs $19.99 for a lifetime purchase, but I'm moving
+to a subscription, so buy now!
+
 
 # All Day I Stream (defunct) 
 
