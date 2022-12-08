@@ -67,7 +67,7 @@ I started the app on November 8, so well into the month, so I technically built 
 
 When I started, I was considering options like CoreData vs JSON serialization to store the chart data. Ultimately, I again focused on simplicity and simply hard-coded the charts based on data I found from a reliable source of poker simulations.
 
-Here’s a screenshot from my goal tracker app [Navigoals](navigoals.com) that demonstrates when I did Pomodoro tomatoes on this app:
+Here’s a screenshot from my goal tracker app [Navigoals](https://navigoals.com) that demonstrates when I did Pomodoro tomatoes on this app:
 
 
 <img height="600" width="600" src=
