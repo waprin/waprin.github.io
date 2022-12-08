@@ -46,7 +46,7 @@ In general, it’s tough to quickly make money in any space that’s super crowd
 
 Microconf founder Rob Walling discusses the value of pursuing niches in his book *Start Small, Stay Small.* Niches won’t have much competition from big companies since the market opportunity is too small. Niches will be cheaper to market too since you can buy ads on more small, focused communities. 
 
-This raises the question - how do you select a niche? There’s a few strategies here - some people trying things like analyzing Reddit or Twitter for small but growing new trends. I don’t like about this approach because you won’t have any personal connection to the problem space, making it more difficult to truly build the right thing.
+This raises the question - how do you select a niche? There’s a few strategies here - some people like analyzing Reddit or Twitter for small but growing new trends. This might work, but I don’t love this approach because you won’t have any personal connection to the problem space, making it more difficult to truly build the right thing and stay motivated.
 
 One of my favorite entrepreneurship books that I’ve recently read is *The Embedded Entrepreneur* by Arvid Kahl. Arvid stresses the importance of building for audiences that you have an affinity for. He challenges the reader to go through an exercise where you list all the audiences you are a part of, then write down how much business opportunity there might be in the space. 
 
