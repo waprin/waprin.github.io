@@ -36,7 +36,7 @@ Still, to me there’s value in making even a tiny amount of money. It got me ex
 Due to the [Matthew effect](https://en.wikipedia.org/wiki/Matthew_effect), there’s an aspect to life and startups where “winners keep winning”. That’s why it’s important to find small wins because they tend to compound on each other. Any income at all also extends my entrepreneurial runway.
 
 To the extent there’s more online opportunity in b2b market, I’m hypothesizing one of the best ways to discover them is to actually create online businesses. But if your app is free with no revenue, it’s more of a hobby than a business. Since I have an app at least some people will pay money for, it makes
-more sense to explore options like paid ads and running experiments around optimizing RoaS (return-on-ad-spend), something I've done as an engineering on Growth teams for Silicon Valley companies.
+more sense to explore options like paid ads and running experiments around optimizing RoaS (return-on-ad-spend), something I've done before as an engineer on Growth teams for Silicon Valley companies.
 
 Finally, as someone blogging about my experience indie hacking / bootstrapping, making any money makes me a more interesting storyteller than someone with a big fat 0 in the revenue column.
 
