@@ -61,7 +61,7 @@ The landing page for my app is here : [https://aceupmysleeve.ap](https://aceupmy
 
 There’s some controversy around the use of preflop apps at poker that I address on my landing page. Ultimately, my viewpoint is it’s not cheating if you comply with all rules.
 
-One last reason I picked this app is because I do think watchOS apps are overlooked, and I really want to make a first-class watchOS experience for my goal tracker app Navigoals. So I wanted to start with a simple one . This fit the bill, especially because I had to learn a lot about APIs such as WatchConnectivity to even get the IAP working reliably.
+One last reason I picked this app is because I do think watchOS apps are overlooked, and I really want to make a first-class watchOS experience for my goal tracker app [Navigoals](https://billprin.com/2022/10/14/why-im-building-navi.html). So I wanted to start with a simple one . This fit the bill, especially because I had to learn a lot about APIs such as WatchConnectivity to even get the IAP working reliably.
 
 ### How Long the App Took To Develop
 
