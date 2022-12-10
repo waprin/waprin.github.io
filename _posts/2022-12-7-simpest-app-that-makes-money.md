@@ -57,7 +57,7 @@ Ultimately, I decided to make an Apple Watch app for poker players. This was for
 
 While there’s a lot of chatter about b2b vs b2c, I’m most excited about “b2p” (business 2 prosumer) opportunities since they have the revenue opportunities of b2b but the niche markets reachable with consumer marketing like b2c. I'm not exactly an expert on enterprise sales, so I'm hoping prosumers help me avoid it.
 
-The landing page for my app is here : [https://aceupmysleeve.ap](https://aceupmysleeve.ap)p . 
+The landing page for my app is here : [https://aceupmysleeve.app](https://aceupmysleeve.app) . 
 
 There’s some controversy around the use of preflop apps at poker that I address on my landing page. Ultimately, my viewpoint is it’s not cheating if you comply with all rules.
 
