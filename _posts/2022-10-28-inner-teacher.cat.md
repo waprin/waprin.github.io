@@ -3,7 +3,7 @@ layout: post
 title: My Inner Teacher Cat
 description: "Making the right decisions by looking for guidance from my inner teacher cat or inner guru"
 categories: mental-health
-tags: [mental-health, spirituality]
+tags: [skip, mental-health, spirituality]
 ---
 
 
