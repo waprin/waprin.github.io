@@ -15,8 +15,9 @@ layout: default
 	{{ content }}
 </div>
 <div>
-	You can find me on Twitter <a href="https://twitter.com/bill_prin">@bill_prin</a>
-</div>
+	You can find me on Mastodon <a href="https://indieweb.social/@waprin">@waprin@indieweb.social</a>  on Twitter <a href="https://twitter.com/bill_prin">@bill_prin</a>. 
+	Sign up on this <a href="https://bill-prin.ck.page/e8f640870e">on this landing page</a> if you want emails when I write a new post (sorry to send you to 
+	a convertkit landing page, I'm rewriting this site).
  <div class="tags-container">
 	{% for tag in page.tags %}
 		<a href="{{ site.url }}/tags/#{{tag | cgi_escape}}" class="post-tag">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
