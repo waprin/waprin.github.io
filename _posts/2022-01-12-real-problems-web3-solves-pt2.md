@@ -3,7 +3,7 @@ layout: post
 title: Real Problems That Web3 Solves, Part 2
 description: ""
 categories: crypto
-tags: [web3, crypto, ethereum, skip]
+tags: [web3, crypto, ethereum]
 ---
 
 <img src="{{ site.url }}/assets/images/webuywesell.jpeg" height="400"/>
