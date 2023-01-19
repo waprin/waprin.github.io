@@ -3,9 +3,7 @@ layout: page
 permalink: /
 ---
 
-Hi, my name is Bill, and I'm a software engineer living in San Francisco. 
-
-I'm also an aspiring product designer, product manager, writer, and entrepeneur - all wrapped up as an indie hacker.
+Hi, my name is Bill, and I'm a software engineer, entrepeneur, and indie hacker living in San Francisco. 
 
 I write posts on programming, mental health, and startups on my [blog](/blog).
 
